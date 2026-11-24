@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="sattleme" source-language="en-US" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="f5b372f1348f44b13a8f81dd8631ae48">
+        <source>%btc% BTC</source>
+        <target>%btc% BTC</target>
+      </trans-unit>
+      <trans-unit id="0708d6508e8fc045dc0cc46b42b01472">
+        <source>%confirmations% of 3 confirmations</source>
+        <target>%confirmations% confirmation(s) sur 3</target>
+      </trans-unit>
+      <trans-unit id="c86e5a647ff35b9addd17e484b135e25">
+        <source>%received% of %sats% sats came. Pay the rest to complete your payment: %rest% sats.</source>
+        <target>%received% sats sur %sats% sont arrivés. Payez le reste pour compléter votre paiement : %rest% sats.</target>
+      </trans-unit>
+      <trans-unit id="e71b8500a20ed806c2537dd7d16eae08">
+        <source>%sats% sats</source>
+        <target>%sats% sats</target>
+      </trans-unit>
+      <trans-unit id="7af9521c20825e3baffb632141865415">
+        <source>Amount to pay</source>
+        <target>Montant à payer</target>
+      </trans-unit>
+      <trans-unit id="71fc326dc4249acd054383d9bfba7f8d">
+        <source>Bitcoin address (on-chain)</source>
+        <target>Adresse bitcoin (on-chain)</target>
+      </trans-unit>
+      <trans-unit id="261a1140d97b4fe17aabc2433d7c0234">
+        <source>Bitcoin payment</source>
+        <target>Paiement bitcoin</target>
+      </trans-unit>
+      <trans-unit id="e772dce39aac403bc1515715508d614d">
+        <source>Bitcoin payments are not available right now. Please choose another payment method, or contact us.</source>
+        <target>Les paiements en bitcoin ne sont pas disponibles pour le moment. Veuillez choisir un autre moyen de paiement, ou nous contacter.</target>
+      </trans-unit>
+      <trans-unit id="7cf37d1bcfb5bc39aed23c66c5e4c892">
+        <source>Check again</source>
+        <target>Vérifier à nouveau</target>
+      </trans-unit>
+      <trans-unit id="02d4482d332e1aef3437cd61c9bcc624">
+        <source>Contact us</source>
+        <target>Nous contacter</target>
+      </trans-unit>
+      <trans-unit id="a588b1abc58b8b758c4b34b69b9e10bb">
+        <source>Copied</source>
+        <target>Copié</target>
+      </trans-unit>
+      <trans-unit id="5fb63579fc981698f97d55bfecb213ea">
+        <source>Copy</source>
+        <target>Copier</target>
+      </trans-unit>
+      <trans-unit id="f3338f7657a1dc9a571eb7a4b762265f">
+        <source>Follow the payment</source>
+        <target>Suivre le paiement</target>
+      </trans-unit>
+      <trans-unit id="753c108c285f6e8eb583714f329bda74">
+        <source>Get a new invoice</source>
+        <target>Obtenir une nouvelle facture</target>
+      </trans-unit>
+      <trans-unit id="2ffe4e263e41660fbce3577b8125ed1f">
+        <source>Lightning invoice</source>
+        <target>Facture Lightning</target>
+      </trans-unit>
+      <trans-unit id="9fddf89fc6fc300bf6525d466495b8ac">
+        <source>Open in my wallet</source>
+        <target>Ouvrir dans mon portefeuille</target>
+      </trans-unit>
+      <trans-unit id="7a4ebfb4228a1cc726cd6288a01814f4">
+        <source>Order %reference%</source>
+        <target>Commande %reference%</target>
+      </trans-unit>
+      <trans-unit id="d903eae23f23d9af60efff23aeea61a0">
+        <source>Paid on-chain, your order is paid once your transaction has 3 confirmations, about 30 minutes. Send the exact amount before the time is up.</source>
+        <target>Payée on-chain, votre commande est payée dès que votre transaction a 3 confirmations, environ 30 minutes. Envoyez le montant exact avant la fin du délai.</target>
+      </trans-unit>
+      <trans-unit id="8bd4837a76cf443ab523a51895e23c36">
+        <source>Pay now</source>
+        <target>Payer maintenant</target>
+      </trans-unit>
+      <trans-unit id="12bafae2519c48c95849799a8bd4d9d3">
+        <source>Pay with bitcoin</source>
+        <target>Payer en bitcoin</target>
+      </trans-unit>
+      <trans-unit id="6ad9e40a5ad436916fce90cfd0e98cb5">
+        <source>Pay with your Bitcoin wallet, in Lightning or on-chain. Once you have placed your order, you get a QR code to scan with your wallet.</source>
+        <target>Payez avec votre portefeuille Bitcoin, en Lightning ou on-chain. Une fois votre commande passée, vous obtenez un code QR à scanner avec votre portefeuille.</target>
+      </trans-unit>
+      <trans-unit id="47e843639b2260d2e782ee10a99d07e8">
+        <source>Payment reference: %reference%</source>
+        <target>Référence du paiement : %reference%</target>
+      </trans-unit>
+      <trans-unit id="0cca5930c2347bcdf4b28e59240a51a9">
+        <source>QR code of the bitcoin invoice</source>
+        <target>Code QR de la facture bitcoin</target>
+      </trans-unit>
+      <trans-unit id="7cc862d763f2869911c508272137ae14">
+        <source>Scan the QR code with your Bitcoin wallet, or open the invoice in your wallet.</source>
+        <target>Scannez le code QR avec votre portefeuille Bitcoin, ou ouvrez la facture dans votre portefeuille.</target>
+      </trans-unit>
+      <trans-unit id="69e0615c2dc2e2071f31e06046e2f525">
+        <source>The Bitcoin network is confirming its on-chain transaction, which takes about 30 minutes. You can close this page: you will get an e-mail once your order is paid.</source>
+        <target>Le réseau Bitcoin confirme sa transaction on-chain, ce qui prend environ 30 minutes. Vous pouvez fermer cette page : vous recevrez un e-mail dès que votre commande sera payée.</target>
+      </trans-unit>
+      <trans-unit id="ef1e6c53dda359a83bff53e9144de878">
+        <source>The bitcoin invoice of this order expired before it was paid.</source>
+        <target>La facture bitcoin de cette commande a expiré avant d'être payée.</target>
+      </trans-unit>
+      <trans-unit id="c8dbb4828673f526f6802039bf240d0b">
+        <source>The bitcoin invoice of this order is no longer checked. If you paid it, please contact us with its reference below.</source>
+        <target>La facture bitcoin de cette commande n'est plus vérifiée. Si vous l'avez payée, veuillez nous contacter en indiquant sa référence ci-dessous.</target>
+      </trans-unit>
+      <trans-unit id="3e97e2b095a13ebde2cc6f54fc6da90f">
+        <source>The time to pay is over. We are checking whether your payment came in time.</source>
+        <target>Le délai de paiement est écoulé. Nous vérifions si votre paiement est arrivé à temps.</target>
+      </trans-unit>
+      <trans-unit id="b51453ee04f99c30fcfe0b53db97e0e6">
+        <source>This invoice ended before it was paid in full: %received% of %sats% sats came. We will contact you to settle the difference.</source>
+        <target>Cette facture s'est terminée avant d'être entièrement payée : %received% sats sur %sats% sont arrivés. Nous vous contacterons pour régler la différence.</target>
+      </trans-unit>
+      <trans-unit id="f15b6ea471553da8e28d9fe77880f01c">
+        <source>This invoice expired before it was paid.</source>
+        <target>Cette facture a expiré avant d'être payée.</target>
+      </trans-unit>
+      <trans-unit id="ceb9253cc1805eaa590d9d7a13f3e513">
+        <source>This invoice is no longer checked. If you paid it, please contact us with its reference below.</source>
+        <target>Cette facture n'est plus vérifiée. Si vous l'avez payée, veuillez nous contacter en indiquant sa référence ci-dessous.</target>
+      </trans-unit>
+      <trans-unit id="fcaf680291ee696608bb6e9e84e15934">
+        <source>This order cannot be paid with bitcoin. Please choose another payment method.</source>
+        <target>Cette commande ne peut pas être payée en bitcoin. Veuillez choisir un autre moyen de paiement.</target>
+      </trans-unit>
+      <trans-unit id="beed7308d27634e4497edd45b2ef1f3b">
+        <source>This order was canceled: do not pay it.</source>
+        <target>Cette commande a été annulée : ne la payez pas.</target>
+      </trans-unit>
+      <trans-unit id="ba7d81bfee6772d2a5bf5fcda565c3e3">
+        <source>This page does not update by itself without JavaScript: once you have paid, use the button to check again.</source>
+        <target>Sans JavaScript, cette page ne se met pas à jour d'elle-même : une fois le paiement effectué, utilisez le bouton pour vérifier à nouveau.</target>
+      </trans-unit>
+      <trans-unit id="f2f5d159c197a83ca6663609b8559871">
+        <source>This page expired. Please try again.</source>
+        <target>Cette page a expiré. Veuillez réessayer.</target>
+      </trans-unit>
+      <trans-unit id="9e82f20edf7e029bca70250879d17dbd">
+        <source>This payment method is not available for this order. Please choose another one.</source>
+        <target>Ce moyen de paiement n'est pas disponible pour cette commande. Veuillez en choisir un autre.</target>
+      </trans-unit>
+      <trans-unit id="5e60b70e9ac105f420e3d8fcacab32fe">
+        <source>Time left to pay</source>
+        <target>Temps restant pour payer</target>
+      </trans-unit>
+      <trans-unit id="135a1e8493f2ebe99b684fe398e72c44">
+        <source>We are checking your invoice. This takes a few seconds.</source>
+        <target>Nous vérifions votre facture. Cela prend quelques secondes.</target>
+      </trans-unit>
+      <trans-unit id="7169c30dc78fe860de9bfb03a81fea0a">
+        <source>We could not create a bitcoin invoice for this order.</source>
+        <target>Nous n'avons pas pu créer de facture bitcoin pour cette commande.</target>
+      </trans-unit>
+      <trans-unit id="f705c58466aff15175e6882a53eed050">
+        <source>We could not create your bitcoin invoice right now. Please try again in a moment.</source>
+        <target>Nous n'avons pas pu créer votre facture bitcoin pour le moment. Veuillez réessayer dans un instant.</target>
+      </trans-unit>
+      <trans-unit id="de54d351e6b1ed73b2a96b2ab44645c0">
+        <source>We could not place your order. Please try again in a moment.</source>
+        <target>Nous n'avons pas pu enregistrer votre commande. Veuillez réessayer dans un instant.</target>
+      </trans-unit>
+      <trans-unit id="d052b54d814705b1c5726b5b4b63a4f6">
+        <source>We will contact you about your order.</source>
+        <target>Nous vous contacterons au sujet de votre commande.</target>
+      </trans-unit>
+      <trans-unit id="e4d5b22ac7b296990cb2f6ba264034c5">
+        <source>Your bitcoin invoice is not ready yet.</source>
+        <target>Votre facture bitcoin n'est pas encore prête.</target>
+      </trans-unit>
+      <trans-unit id="dcbf7e32e5415ed40f92ad4f46f6961c">
+        <source>Your bitcoin payment came in time. The Bitcoin network is confirming its on-chain transaction, which takes about 30 minutes: you will get an e-mail once your order is paid.</source>
+        <target>Votre paiement bitcoin est arrivé à temps. Le réseau Bitcoin confirme sa transaction on-chain, ce qui prend environ 30 minutes : vous recevrez un e-mail dès que votre commande sera payée.</target>
+      </trans-unit>
+      <trans-unit id="1ac37be3d28cd1e08abb18e8a22c07a0">
+        <source>Your bitcoin payment was received. Thank you!</source>
+        <target>Votre paiement bitcoin a été reçu. Merci !</target>
+      </trans-unit>
+      <trans-unit id="be0010f551abfabb84dce31ef397f40b">
+        <source>Your bitcoin payment was received. We will contact you about your order.</source>
+        <target>Votre paiement bitcoin a été reçu. Nous vous contacterons au sujet de votre commande.</target>
+      </trans-unit>
+      <trans-unit id="fdfaf2a9d887106dab1390b7aba15b95">
+        <source>Your bitcoin payment was received. Your order is being updated with it: do not pay again.</source>
+        <target>Votre paiement bitcoin a été reçu. Votre commande est en cours de mise à jour : ne payez pas une seconde fois.</target>
+      </trans-unit>
+      <trans-unit id="795a7ad61ef059a75d7413131bb8f93d">
+        <source>Your invoice is being created. Please wait a moment.</source>
+        <target>Votre facture est en cours de création. Veuillez patienter un instant.</target>
+      </trans-unit>
+      <trans-unit id="cd3cd584152eef5d573a38489a4e7437">
+        <source>Your order awaits its bitcoin payment.</source>
+        <target>Votre commande attend son paiement bitcoin.</target>
+      </trans-unit>
+      <trans-unit id="e0b42cc472940fe0c216343d97c7630d">
+        <source>Your order is being updated with it: this page shows it in a moment. Do not pay again.</source>
+        <target>Votre commande est en cours de mise à jour : cette page l'affichera dans un instant. Ne payez pas une seconde fois.</target>
+      </trans-unit>
+      <trans-unit id="8f833648775203191127ff176b64ec2e">
+        <source>Your order is still being processed. Please wait a moment, then place it again.</source>
+        <target>Votre commande est encore en cours de traitement. Veuillez patienter un instant, puis la passer à nouveau.</target>
+      </trans-unit>
+      <trans-unit id="2a04b1ee0ed4f19da00e15ee53332bea">
+        <source>Your payment came in time.</source>
+        <target>Votre paiement est arrivé à temps.</target>
+      </trans-unit>
+      <trans-unit id="6b7f18bda75d9330adab8be0bba1898d">
+        <source>Your payment was received.</source>
+        <target>Votre paiement a été reçu.</target>
+      </trans-unit>
+      <trans-unit id="96aaba4bc7d3e8fa81d4d0805715b24d">
+        <source>Your payment was received. Thank you!</source>
+        <target>Votre paiement a été reçu. Merci !</target>
+      </trans-unit>
+      <trans-unit id="5a4d12743524e6f2f13667018df83bb2">
+        <source>Your session expired. Please place your order again.</source>
+        <target>Votre session a expiré. Veuillez passer votre commande à nouveau.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

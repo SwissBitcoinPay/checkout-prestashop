@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  unit: the module's code as its ZIP holds it, without PrestaShop (the default).
+  shop: in a PrestaShop shop with the module installed from the ZIP (tests/shop/shop.sh setup, then
+  its env): the integration tests, in the tests' process.
+  http: a shop's pages over HTTP only, as its merchant and its customers reach them: the shop of
+  tests/shop/shop.sh, or PrestaShop's Docker image (tests/e2e/run.sh).
+  opc: the same, through PrestaShop 9.2's One Page Checkout (its module ps_onepagecheckout): in a
+  shop of PrestaShop 9.2 only.
+-->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
+         cacheDirectory="build/phpunit-cache"
+         colors="true"
+         defaultTestSuite="unit"
+         beStrictAboutOutputDuringTests="true"
+         failOnDeprecation="true"
+         failOnEmptyTestSuite="true"
+         failOnNotice="true"
+         failOnPhpunitDeprecation="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         displayDetailsOnTestsThatTriggerDeprecations="true"
+         displayDetailsOnTestsThatTriggerErrors="true"
+         displayDetailsOnTestsThatTriggerNotices="true"
+         displayDetailsOnTestsThatTriggerWarnings="true">
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="shop">
+            <directory>tests/Integration</directory>
+        </testsuite>
+        <testsuite name="http">
+            <directory>tests/Http</directory>
+        </testsuite>
+        <testsuite name="opc">
+            <directory>tests/Opc</directory>
+        </testsuite>
+    </testsuites>
+    <!-- The deprecations, notices and warnings that fail a test are the module's and the tests'
+         own: PrestaShop's and its other modules' are theirs to fix. -->
+    <source ignoreDirectDeprecations="true" ignoreIndirectDeprecations="true" restrictNotices="true" restrictWarnings="true">
+        <include>
+            <directory>build/test-module/sattleme</directory>
+            <directory>build/shop/www/modules/sattleme</directory>
+            <directory>tests</directory>
+        </include>
+        <exclude>
+            <directory>build/test-module/sattleme/vendor</directory>
+            <directory>build/shop/www/modules/sattleme/vendor</directory>
+        </exclude>
+    </source>
+    <php>
+        <ini name="error_reporting" value="-1"/>
+        <ini name="memory_limit" value="1G"/>
+        <ini name="date.timezone" value="Europe/Zurich"/>
+    </php>
+</phpunit>

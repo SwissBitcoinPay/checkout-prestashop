@@ -1,0 +1,79 @@
+{
+    "name": "sattleme/checkout-prestashop",
+    "description": "sattle.me for PrestaShop: customers pay their orders in bitcoin, in Lightning or on-chain, straight to the merchant's sattle.me wallet.",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "bitcoin",
+        "lightning",
+        "payment",
+        "prestashop",
+        "sattleme"
+    ],
+    "homepage": "https://github.com/sattleme/checkout-prestashop",
+    "authors": [
+        {
+            "name": "sattle.me",
+            "homepage": "https://sattle.me"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sattleme/checkout-prestashop/issues",
+        "source": "https://github.com/sattleme/checkout-prestashop",
+        "security": "https://github.com/sattleme/checkout-prestashop/security/policy"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "sdk",
+            "options": {
+                "symlink": false,
+                "versions": {
+                    "sattleme/checkout": "1.0.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-bcmath": "*",
+        "ext-hash": "*",
+        "ext-iconv": "*",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-pcre": "*",
+        "bacon/bacon-qr-code": "3.1.1",
+        "dasprid/enum": "1.0.7",
+        "sattleme/checkout": "1.0.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "3.95.31",
+        "phpstan/phpstan": "2.3.6",
+        "phpstan/phpstan-phpunit": "2.1.2",
+        "phpstan/phpstan-strict-rules": "2.1.1",
+        "phpunit/phpunit": "11.5.58",
+        "prestashop/php-dev-tools": "5.0.0",
+        "symfony/translation-contracts": "3.8.1"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sattleme\\PrestaShop\\Tests\\": "tests/",
+            "Sattleme\\PrestaShop\\Tools\\": "tools/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.2.0"
+        },
+        "sort-packages": true,
+        "allow-plugins": {}
+    },
+    "scripts": {
+        "build": "sh tools/build.sh",
+        "sdk:check": "@php tools/sdk.php check",
+        "format": "php-cs-fixer fix",
+        "format:check": "php-cs-fixer check --diff",
+        "analyse": "phpstan analyse --memory-limit=1G",
+        "test": "phpunit --testsuite unit"
+    }
+}

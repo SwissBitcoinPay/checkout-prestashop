@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="sattleme" source-language="en-US" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="23dde5a207329bd8d0067e9265581598">
+        <source>Accept bitcoin payments</source>
+        <target>Accetta pagamenti in bitcoin</target>
+      </trans-unit>
+      <trans-unit id="71456e44e6ece60a63f212822812aa23">
+        <source>Accept bitcoin payments, in Lightning or on-chain, paid straight to your sattle.me wallet.</source>
+        <target>Accetta pagamenti in bitcoin, in Lightning oppure on-chain, versati direttamente nel tuo wallet sattle.me.</target>
+      </trans-unit>
+      <trans-unit id="b2f40690858b404ed10e62bdf422c704">
+        <source>Amount</source>
+        <target>Importo</target>
+      </trans-unit>
+      <trans-unit id="54911335350ad94e27ab00a3e38baefa">
+        <source>An unexpected error occurred (see PrestaShop's logs).</source>
+        <target>Si è verificato un errore imprevisto (vedi i log di PrestaShop).</target>
+      </trans-unit>
+      <trans-unit id="39e241a9088b31a57c2cfd1bb5dc7c86">
+        <source>Awaiting bitcoin payment</source>
+        <target>In attesa del pagamento bitcoin</target>
+      </trans-unit>
+      <trans-unit id="ebb8d514f56157d7bd513eefdd9adb63">
+        <source>Awaiting payment</source>
+        <target>In attesa di pagamento</target>
+      </trans-unit>
+      <trans-unit id="fd5dd2e1840dbd5b733c9095dd087720">
+        <source>Background checks</source>
+        <target>Verifiche in background</target>
+      </trans-unit>
+      <trans-unit id="755c28b13e9035483b75bf6b802d2b98">
+        <source>Being confirmed on-chain</source>
+        <target>In conferma on-chain</target>
+      </trans-unit>
+      <trans-unit id="42df87a0357a4f30376426111e4eceb0">
+        <source>Bitcoin address</source>
+        <target>Indirizzo bitcoin</target>
+      </trans-unit>
+      <trans-unit id="e56719f75f6ffc4055df83e5198f6e3a">
+        <source>Bitcoin payment %ref% came for this order, which was canceled or refunded: %sats% sats came %how%, for an invoice of %invoice_sats% sats (%price%), and reached your wallet. The order waits in "Bitcoin payment to check" (taken out of Canceled or Payment error, it takes its products from the stock again): reinstate it, or refund the customer from your wallet.</source>
+        <target>Il pagamento bitcoin %ref% è arrivato per questo ordine, che era stato annullato o rimborsato: %sats% sats sono arrivati %how%, per una fattura di %invoice_sats% sats (%price%), e hanno raggiunto il tuo wallet. L'ordine attende in «Pagamento bitcoin da verificare» (tolto da «Annullato» o «Errore di pagamento», riprende i suoi prodotti dallo stock): ripristinalo, oppure rimborsa il cliente dal tuo wallet.</target>
+      </trans-unit>
+      <trans-unit id="e88dfcb45f7a828c2f0671f57e0703e4">
+        <source>Bitcoin payment %ref% came: %sats% sats came %how%, for an invoice of %invoice_sats% sats (%price%), and reached your wallet. The order now owes %owed% (its total, less its other payments and its credit slips): it changed after the invoice was made, so it waits in "Bitcoin payment to check". Settle the difference with the customer, then set the order's state.</source>
+        <target>Il pagamento bitcoin %ref% è arrivato: %sats% sats sono arrivati %how%, per una fattura di %invoice_sats% sats (%price%), e hanno raggiunto il tuo wallet. L'ordine deve ora %owed% (il suo totale, meno i suoi altri pagamenti e le sue note di credito): è cambiato dopo la creazione della fattura, quindi attende in «Pagamento bitcoin da verificare». Regola la differenza con il cliente, poi imposta lo stato dell'ordine.</target>
+      </trans-unit>
+      <trans-unit id="c7616e43fd324cb03fcf637ef6b17eba">
+        <source>Bitcoin payment %ref% came: %sats% sats came %how%, for an invoice of %invoice_sats% sats (%price%), and reached your wallet. What the order owes now cannot be told exactly (a payment in another currency is recorded on it), so it waits in "Bitcoin payment to check": settle it with the customer, then set the order's state.</source>
+        <target>Il pagamento bitcoin %ref% è arrivato: %sats% sats sono arrivati %how%, per una fattura di %invoice_sats% sats (%price%), e hanno raggiunto il tuo wallet. Ciò che l'ordine deve ora non può essere stabilito con esattezza (vi è registrato un pagamento in un'altra valuta), quindi attende in «Pagamento bitcoin da verificare»: regolalo con il cliente, poi imposta lo stato dell'ordine.</target>
+      </trans-unit>
+      <trans-unit id="bf5b478d536a18d1c0d5a926e56d18e9">
+        <source>Bitcoin payment %ref%: %received% of %sats% sats came %how%, which the sattle.me app accepted as the payment (your tolerance, or your acceptance of what came).</source>
+        <target>Pagamento bitcoin %ref%: %received% sats su %sats% sono arrivati %how%, che l'app sattle.me ha accettato come pagamento (la tua tolleranza, o la tua accettazione di ciò che è arrivato).</target>
+      </trans-unit>
+      <trans-unit id="429590725f77873ef4b785b739a7f2bc">
+        <source>Bitcoin payment %ref%: %received% sats came %how% for an invoice of %sats% sats, %extra% sats more, which reached your wallet: refund them to the customer if needed.</source>
+        <target>Pagamento bitcoin %ref%: %received% sats sono arrivati %how% per una fattura di %sats% sats, %extra% sats in più, che hanno raggiunto il tuo wallet: rimborsali al cliente se necessario.</target>
+      </trans-unit>
+      <trans-unit id="036f92bbd35db5ca75ae94587bae88d4">
+        <source>Bitcoin payment being confirmed</source>
+        <target>Pagamento bitcoin in conferma</target>
+      </trans-unit>
+      <trans-unit id="dddccabe8d65f78883a11504f5002d44">
+        <source>Bitcoin payment to check</source>
+        <target>Pagamento bitcoin da verificare</target>
+      </trans-unit>
+      <trans-unit id="7643b1a7b95e3b76cce8efe3fb0b641f">
+        <source>Bitcoin payments (sattle.me)</source>
+        <target>Pagamenti bitcoin (sattle.me)</target>
+      </trans-unit>
+      <trans-unit id="bbc006982f091c4fa3bcd9ceb094375a">
+        <source>Checks given up after 90 days: settle it by hand</source>
+        <target>Verifiche abbandonate dopo 90 giorni: da regolare a mano</target>
+      </trans-unit>
+      <trans-unit id="7648a6407c100b97a638ac05b600d1bd">
+        <source>Confirmations</source>
+        <target>Conferme</target>
+      </trans-unit>
+      <trans-unit id="d6162fe52e94e49523607f4323b988d3">
+        <source>Customers are not offered to pay with bitcoin: turn on "Accept bitcoin payments" below.</source>
+        <target>Il pagamento in bitcoin non viene proposto ai clienti: attiva "Accetta pagamenti in bitcoin" qui sotto.</target>
+      </trans-unit>
+      <trans-unit id="2732b6af78facfac0a071c8be9d1cd67">
+        <source>Customers are offered to pay with bitcoin.</source>
+        <target>Il pagamento in bitcoin viene proposto ai clienti.</target>
+      </trans-unit>
+      <trans-unit id="8ad907ef9219a55abd1ed79acbf2a651">
+        <source>Description at checkout</source>
+        <target>Descrizione al pagamento</target>
+      </trans-unit>
+      <trans-unit id="66583340557150256d40390e95474be1">
+        <source>Ended underpaid: settle it by hand</source>
+        <target>Terminato con un pagamento insufficiente: da regolare a mano</target>
+      </trans-unit>
+      <trans-unit id="8479a3b69775a6be2e8ef68f3f3ec4cf">
+        <source>Enter the integration key to accept bitcoin payments.</source>
+        <target>Inserisci la chiave di integrazione per accettare pagamenti in bitcoin.</target>
+      </trans-unit>
+      <trans-unit id="3187e3bbff5821ceb00e15cbc54f6a6b">
+        <source>Enter the integration key to accept bitcoin payments. Create the integration in the sattle.me app (Integrations), and copy its secret key here.</source>
+        <target>Inserisci la chiave di integrazione per accettare pagamenti in bitcoin. Crea l'integrazione nell'app sattle.me (Integrazioni), poi copia qui la sua chiave segreta.</target>
+      </trans-unit>
+      <trans-unit id="ab1e5a9e4e9ae873200fe5b9258a2793">
+        <source>Expired, never paid</source>
+        <target>Scaduto, mai pagato</target>
+      </trans-unit>
+      <trans-unit id="8abc236fddbc21b0b749fb20facf6d94">
+        <source>For example, as a line of the crontab of the web server's user:</source>
+        <target>Per esempio, come riga della crontab dell'utente del server web:</target>
+      </trans-unit>
+      <trans-unit id="7dadd2a40e4e22f3f642fc1895343e08">
+        <source>Good to know</source>
+        <target>Da sapere</target>
+      </trans-unit>
+      <trans-unit id="86b77e045c81c681e3b6642d55185c28">
+        <source>How long the customer has to pay an invoice, from 1 to 60 minutes.</source>
+        <target>Il tempo a disposizione del cliente per pagare una fattura, da 1 a 60 minuti.</target>
+      </trans-unit>
+      <trans-unit id="f8f7fe35e8d51e3e079a68d9cb44a84c">
+        <source>In the sattle.me app, create an integration for this shop and enter its secret key (sattleme_ck_…). It is checked when you save it, and never shown again: leave the field empty to keep the saved key. Whoever holds it can create invoices that pay you, never spend your funds: keep it secret all the same. Change it only while no bitcoin payment is pending: those are checked with the key set here.</source>
+        <target>Nell'app sattle.me, crea un'integrazione per questo negozio e inserisci la sua chiave segreta (sattleme_ck_…). Viene verificata al salvataggio e non viene mai più mostrata: lascia il campo vuoto per mantenere la chiave salvata. Chi la possiede può creare fatture che pagano te, mai spendere i tuoi fondi: tienila comunque segreta. Cambiala solo quando nessun pagamento bitcoin è in sospeso: questi vengono verificati con la chiave impostata qui.</target>
+      </trans-unit>
+      <trans-unit id="7b48275a9d5a09571bf9588534b36340">
+        <source>Integration key</source>
+        <target>Chiave di integrazione</target>
+      </trans-unit>
+      <trans-unit id="15e88b41ff0247295592ab9af709a892">
+        <source>Invoice made</source>
+        <target>Fattura creata</target>
+      </trans-unit>
+      <trans-unit id="1c6f27e9f0b8446636ae5a90ff7a9db0">
+        <source>Invoice not made yet</source>
+        <target>Fattura non ancora creata</target>
+      </trans-unit>
+      <trans-unit id="e5a53194e8df8d3bbe4af81846f93923">
+        <source>Invoices being checked: %count%</source>
+        <target>Fatture in verifica: %count%</target>
+      </trans-unit>
+      <trans-unit id="3b1f4d2d402249287be59c6d8dcc68df">
+        <source>Last check</source>
+        <target>Ultima verifica</target>
+      </trans-unit>
+      <trans-unit id="92de805ae582ce6049f832471539737c">
+        <source>Last error</source>
+        <target>Ultimo errore</target>
+      </trans-unit>
+      <trans-unit id="c2a084ed2d62a04c667ba4c5fe2b0595">
+        <source>Last run: %date%</source>
+        <target>Ultima esecuzione: %date%</target>
+      </trans-unit>
+      <trans-unit id="457ba641340a812b28f949a26fca3e7b">
+        <source>Lightning</source>
+        <target>Lightning</target>
+      </trans-unit>
+      <trans-unit id="e997d2c05c872ca571322adffb4a3e5f">
+        <source>Lightning payment hash</source>
+        <target>Hash del pagamento Lightning</target>
+      </trans-unit>
+      <trans-unit id="6e7b34fa59e1bd229b207892956dc41c">
+        <source>Never</source>
+        <target>Mai</target>
+      </trans-unit>
+      <trans-unit id="fe979a00ed0d7ccdb5d78a7dc8442243">
+        <source>Never shown to the customer</source>
+        <target>Mai mostrata al cliente</target>
+      </trans-unit>
+      <trans-unit id="148541359e0986e9596c966631bef2f6">
+        <source>Next check</source>
+        <target>Prossima verifica</target>
+      </trans-unit>
+      <trans-unit id="646d2c635b5636f50508521046c056d9">
+        <source>No bitcoin invoice was made for this order yet.</source>
+        <target>Per questo ordine non è ancora stata creata alcuna fattura bitcoin.</target>
+      </trans-unit>
+      <trans-unit id="395a9f1aa6be581825440bac66f96d91">
+        <source>No deposit address could be leased for an amount payable on-chain only: open the sattle.me app to fill the integration's lot again.</source>
+        <target>Non è stato possibile riservare alcun indirizzo di deposito per un importo pagabile solo on-chain: apri l'app sattle.me per ricaricare il lotto dell'integrazione.</target>
+      </trans-unit>
+      <trans-unit id="5255ca038102ce88ff6534975f648f94">
+        <source>No integration key is set, or it cannot be read: enter it again in the module's settings.</source>
+        <target>Nessuna chiave di integrazione è impostata, oppure non può essere letta: inseriscila di nuovo nelle impostazioni del modulo.</target>
+      </trans-unit>
+      <trans-unit id="196d54362d24c6a089cc0e0b27ac0752">
+        <source>No invoice could be made</source>
+        <target>Non è stato possibile creare alcuna fattura</target>
+      </trans-unit>
+      <trans-unit id="b7f10ba2d283e85f568b7f2c178e267f">
+        <source>No rate source has a price in this currency.</source>
+        <target>Nessuna fonte di cambio ha un prezzo in questa valuta.</target>
+      </trans-unit>
+      <trans-unit id="dd237c6ef594a94bd3e48a52a73564ed">
+        <source>No usable bitcoin price was found. Try again later.</source>
+        <target>Non è stato trovato alcun prezzo del bitcoin utilizzabile. Riprova più tardi.</target>
+      </trans-unit>
+      <trans-unit id="abdbb117be5fb69b30ab752ddcab528c">
+        <source>Not listed by its status: look the Bitcoin address above up in a block explorer.</source>
+        <target>Non elencate dal suo stato: cerca l'indirizzo Bitcoin qui sopra in un block explorer.</target>
+      </trans-unit>
+      <trans-unit id="673f0ae42889283c3c384446b0a76f41">
+        <source>On-chain</source>
+        <target>On-chain</target>
+      </trans-unit>
+      <trans-unit id="0a084c9b14e3713232ec94776a2b8fbf">
+        <source>On-chain and Lightning</source>
+        <target>On-chain e Lightning</target>
+      </trans-unit>
+      <trans-unit id="e0010a0a1a3259ab5c06a19bad532851">
+        <source>Paid</source>
+        <target>Pagato</target>
+      </trans-unit>
+      <trans-unit id="48a2c9003c0889dcb8905bd0f51f65ab">
+        <source>Paid by</source>
+        <target>Pagato tramite</target>
+      </trans-unit>
+      <trans-unit id="bcf3baa53e43d4ebf87c54602a2cdcc9">
+        <source>Paid, not recorded in PrestaShop yet: tried again at each check</source>
+        <target>Pagato, non ancora registrato in PrestaShop: ritentato a ogni verifica</target>
+      </trans-unit>
+      <trans-unit id="4897bf0d07333a836287c56c9e0b713e">
+        <source>Paid, to check: see the order's note</source>
+        <target>Pagato, da verificare: vedi la nota dell'ordine</target>
+      </trans-unit>
+      <trans-unit id="9a91c35b36fd3cd48915882d6cedaa07">
+        <source>Payable until</source>
+        <target>Pagabile fino al</target>
+      </trans-unit>
+      <trans-unit id="db0f0b38e25c3e27efbfb1ccf912e07f">
+        <source>Payments are checked while the customer's page is open, and in the background by a URL of each shop, which your server's cron must call every minute: each checks its own shop's payments. Keep them secret.</source>
+        <target>I pagamenti vengono verificati finché la pagina del cliente è aperta, e in background tramite un URL di ogni negozio, che il cron del tuo server deve chiamare ogni minuto: ognuno verifica i pagamenti del proprio negozio. Tienili segreti.</target>
+      </trans-unit>
+      <trans-unit id="4dacf48f92a3814be57117e5a1a243db">
+        <source>Payments reach your sattle.me wallet directly: this module never holds funds.</source>
+        <target>I pagamenti arrivano direttamente nel tuo wallet sattle.me: questo modulo non detiene mai fondi.</target>
+      </trans-unit>
+      <trans-unit id="d2bbb049f60cd2826dcbaceb6609b1bf">
+        <source>PrestaShop could not record what the check found (see PrestaShop's logs). It is tried again at the next check.</source>
+        <target>PrestaShop non ha potuto registrare l'esito della verifica (vedi i log di PrestaShop). Verrà ritentato alla prossima verifica.</target>
+      </trans-unit>
+      <trans-unit id="7584a4f30f17ff33b0b4b6d632519571">
+        <source>Proof of payment (preimage)</source>
+        <target>Prova di pagamento (preimage)</target>
+      </trans-unit>
+      <trans-unit id="dcb66ff6e4a2517ade22183779939c9d">
+        <source>Rate</source>
+        <target>Cambio</target>
+      </trans-unit>
+      <trans-unit id="03914458bc3e55d3d9a0aeef02165fa1">
+        <source>Received in time</source>
+        <target>Ricevuto in tempo</target>
+      </trans-unit>
+      <trans-unit id="63d5049791d9d79d86e9a108b0a999ca">
+        <source>Reference</source>
+        <target>Riferimento</target>
+      </trans-unit>
+      <trans-unit id="628a6107c86e32bb86949569467cf8a2">
+        <source>Refunds are never automatic: refund the customer from your wallet, then record the refund in PrestaShop.</source>
+        <target>I rimborsi non sono mai automatici: rimborsa il cliente dal tuo wallet, poi registra il rimborso in PrestaShop.</target>
+      </trans-unit>
+      <trans-unit id="34fc8595665ea007d9e3494846bec40e">
+        <source>Removed at the customer's request (personal data)</source>
+        <target>Rimosso su richiesta del cliente (dati personali)</target>
+      </trans-unit>
+      <trans-unit id="f4f70727dc34561dfde1a3c529b6205c">
+        <source>Settings</source>
+        <target>Impostazioni</target>
+      </trans-unit>
+      <trans-unit id="9a7e58ee13cb727cb7c4acc68f4cafe5">
+        <source>Settings saved.</source>
+        <target>Impostazioni salvate.</target>
+      </trans-unit>
+      <trans-unit id="23f9bda8ca6eab2cfc8575aafd4cbbe4">
+        <source>The background checks have not run for more than 10 minutes: check the cron.</source>
+        <target>Le verifiche in background non vengono eseguite da più di 10 minuti: controlla il cron.</target>
+      </trans-unit>
+      <trans-unit id="c7571c9f7d708204f98d27e1473625c8">
+        <source>The background checks never ran: set up the cron.</source>
+        <target>Le verifiche in background non sono mai state eseguite: configura il cron.</target>
+      </trans-unit>
+      <trans-unit id="04c5ca6bb4593e342bffb30e678540ff">
+        <source>The bitcoin invoice ended underpaid: %received% of %sats% sats came in time, and reached your wallet. Settle the difference with the customer (refund it, or have the rest paid otherwise). Reference: %ref%.</source>
+        <target>La fattura bitcoin è terminata con un pagamento insufficiente: %received% sats su %sats% sono arrivati in tempo, e hanno raggiunto il tuo wallet. Regola la differenza con il cliente (rimborsala, oppure fai pagare il resto in altro modo). Riferimento: %ref%.</target>
+      </trans-unit>
+      <trans-unit id="1552402c06f5a6c7992335141f8d73ca">
+        <source>The bitcoin invoice of this order had no final status after %days% days (an on-chain payment still being confirmed?): its checks stopped. Check this payment in the sattle.me app, and settle the order by hand. Reference: %ref%.</source>
+        <target>La fattura bitcoin di questo ordine non aveva uno stato definitivo dopo %days% giorni (un pagamento on-chain ancora in conferma?): le sue verifiche sono state interrotte. Controlla questo pagamento nell'app sattle.me, e regola l'ordine a mano. Riferimento: %ref%.</target>
+      </trans-unit>
+      <trans-unit id="aa1afa8e16f700e189a0da55f62ed0b6">
+        <source>The check took too long. The payment is checked again later.</source>
+        <target>La verifica ha richiesto troppo tempo. Il pagamento verrà verificato di nuovo più tardi.</target>
+      </trans-unit>
+      <trans-unit id="1b95b77037475a7f028a96423d218d46">
+        <source>The currencies, countries, customer groups and carriers the method is offered for are set in Payment &gt; Preferences.</source>
+        <target>Le valute, i paesi, i gruppi di clienti e i corrieri per cui il metodo viene proposto si impostano in Pagamento &gt; Preferenze.</target>
+      </trans-unit>
+      <trans-unit id="3a8a7102998325cbd0735a0730060b55">
+        <source>The form expired. Please try again.</source>
+        <target>Il modulo è scaduto. Riprova.</target>
+      </trans-unit>
+      <trans-unit id="4ed6c657311cd01491161fc0f4a0b5af">
+        <source>The integration could not be found on its relays. If this lasts, update the module.</source>
+        <target>L'integrazione non è stata trovata sui suoi relay. Se il problema persiste, aggiorna il modulo.</target>
+      </trans-unit>
+      <trans-unit id="23d17b2af9ed0708913c47958bbed841">
+        <source>The integration key is not valid.</source>
+        <target>La chiave di integrazione non è valida.</target>
+      </trans-unit>
+      <trans-unit id="4ebc67ee90ea56f4b8419c6221326120">
+        <source>The integration key of %business% is saved.</source>
+        <target>La chiave di integrazione di %business% è salvata.</target>
+      </trans-unit>
+      <trans-unit id="20296af5f798f1c4585b14fbe844ffa5">
+        <source>The integration key of %business% is saved. It is never shown again.</source>
+        <target>La chiave di integrazione di %business% è salvata. Non verrà mai più mostrata.</target>
+      </trans-unit>
+      <trans-unit id="5c1a82140e7c865aa16a366c91938bef">
+        <source>The integration was removed in the sattle.me app: create a new one and enter its key.</source>
+        <target>L'integrazione è stata rimossa nell'app sattle.me: creane una nuova e inserisci la sua chiave.</target>
+      </trans-unit>
+      <trans-unit id="52db2f1658fdff50e5d7f104271472e2">
+        <source>The merchant's Lightning address answered with an invoice or a payment that failed the checks.</source>
+        <target>L'indirizzo Lightning del commerciante ha risposto con una fattura o un pagamento che non ha superato le verifiche.</target>
+      </trans-unit>
+      <trans-unit id="e08f6e6db9896499b3598edf1b41597f">
+        <source>The merchant's relays, its Lightning address, the rate sources, the block explorer (mempool.space, or the merchant's Bitcoin node) or BlockCypher did not answer. The payment is checked again later.</source>
+        <target>I relay del commerciante, il suo indirizzo Lightning, le fonti di cambio, il block explorer (mempool.space, o il nodo Bitcoin del commerciante) o BlockCypher non hanno risposto. Il pagamento verrà verificato di nuovo più tardi.</target>
+      </trans-unit>
+      <trans-unit id="4f3a26efa7d997055689c307822d03ab">
+        <source>The order or the stored invoice was refused by the SDK.</source>
+        <target>L'ordine o la fattura salvata è stata rifiutata dall'SDK.</target>
+      </trans-unit>
+      <trans-unit id="9de44dface7571047362cc233dbb58eb">
+        <source>The records of the bitcoin payments and the module's order states stay, for the orders that have them. Uninstall?</source>
+        <target>I registri dei pagamenti bitcoin e gli stati d'ordine del modulo restano, per gli ordini che li hanno. Disinstallare?</target>
+      </trans-unit>
+      <trans-unit id="738d9a0e3f9d1611469d492aee5cfb1a">
+        <source>The saved integration key cannot be read: this shop's encryption key (new_cookie_key) changed since it was saved. Enter it again.</source>
+        <target>La chiave di integrazione salvata non può essere letta: la chiave di cifratura di questo negozio (new_cookie_key) è cambiata da quando è stata salvata. Inseriscila di nuovo.</target>
+      </trans-unit>
+      <trans-unit id="8ba68d09e69fa28c36e7febb10aa13d3">
+        <source>The time to pay is a number of minutes, from 1 to 60.</source>
+        <target>Il tempo per pagare è un numero di minuti, da 1 a 60.</target>
+      </trans-unit>
+      <trans-unit id="8f008772bb2b91282cba14ac8c077f84">
+        <source>The title is %title% characters at most, the description %description%.</source>
+        <target>Il titolo ha al massimo %title% caratteri, la descrizione %description%.</target>
+      </trans-unit>
+      <trans-unit id="418c7531c82d2d77d4faac4a3d0aca81">
+        <source>This integration could not be found. Check the key, or try again in a moment.</source>
+        <target>Questa integrazione non è stata trovata. Controlla la chiave, o riprova tra un momento.</target>
+      </trans-unit>
+      <trans-unit id="c2066d98c22c5c18c8bfb9c93762c003">
+        <source>This integration needs a newer version of the sattle.me module.</source>
+        <target>Questa integrazione richiede una versione più recente del modulo sattle.me.</target>
+      </trans-unit>
+      <trans-unit id="97d731c267c988272225d19657582498">
+        <source>This integration was removed in the sattle.me app. Create a new one and enter its key.</source>
+        <target>Questa integrazione è stata rimossa nell'app sattle.me. Creane una nuova e inserisci la sua chiave.</target>
+      </trans-unit>
+      <trans-unit id="3158458353432c94b2bee3be84cb9788">
+        <source>This is not the secret key of a sattle.me integration (sattleme_ck_…).</source>
+        <target>Questa non è la chiave segreta di un'integrazione sattle.me (sattleme_ck_…).</target>
+      </trans-unit>
+      <trans-unit id="d41689938dfa362e492f7eb0847881ee">
+        <source>This order was paid otherwise already, and bitcoin payment %ref% came too: %sats% sats came %how%, for an invoice of %invoice_sats% sats (%price%). Refund one of them.</source>
+        <target>Questo ordine era già stato pagato in altro modo, e anche il pagamento bitcoin %ref% è arrivato: %sats% sats sono arrivati %how%, per una fattura di %invoice_sats% sats (%price%). Rimborsa uno dei due.</target>
+      </trans-unit>
+      <trans-unit id="c2217bff94bf749d58f11611db5cf48c">
+        <source>This server cannot run the module: %missing%</source>
+        <target>Questo server non può eseguire il modulo: %missing%</target>
+      </trans-unit>
+      <trans-unit id="644fcce85ee34eeeb62f815c83493fd3">
+        <source>This server's PHP lacks what the module needs (see the module's settings).</source>
+        <target>Al PHP di questo server manca ciò di cui il modulo ha bisogno (vedi le impostazioni del modulo).</target>
+      </trans-unit>
+      <trans-unit id="1cc7e35f89e1de38a85e987cbe88a47e">
+        <source>Time to pay</source>
+        <target>Tempo per pagare</target>
+      </trans-unit>
+      <trans-unit id="d726f422f45570db2a681112f2405fd9">
+        <source>Title at checkout</source>
+        <target>Titolo al pagamento</target>
+      </trans-unit>
+      <trans-unit id="31112aca11d0e9e6eb7db96f317dda49">
+        <source>Transactions</source>
+        <target>Transazioni</target>
+      </trans-unit>
+      <trans-unit id="4277e75614c13f2aeb4c04cc080c52c9">
+        <source>failed: see its error below</source>
+        <target>fallito: vedi il suo errore qui sotto</target>
+      </trans-unit>
+      <trans-unit id="50f2974df63e7b1e8fd69448187d42fc">
+        <source>in Lightning</source>
+        <target>via Lightning</target>
+      </trans-unit>
+      <trans-unit id="640fd0cc0ffa0316ae087652871f4486">
+        <source>minutes</source>
+        <target>minuti</target>
+      </trans-unit>
+      <trans-unit id="de556ce0ada31b27084ee71eef83842b">
+        <source>on-chain</source>
+        <target>on-chain</target>
+      </trans-unit>
+      <trans-unit id="4e2a8735f9cc5a342edf30d08a3c10dc">
+        <source>on-chain and in Lightning (the rest of an underpayment)</source>
+        <target>on-chain e via Lightning (il resto di un pagamento insufficiente)</target>
+      </trans-unit>
+      <trans-unit id="c67e6344fe1ab2bd44d880fda8f8ac5b">
+        <source>proves the payment hash</source>
+        <target>prova l'hash del pagamento</target>
+      </trans-unit>
+      <trans-unit id="a4d93da5ced5caf964f1c7543d24cc78">
+        <source>sattle.me could not be reached to verify this key. Please try again in a moment.</source>
+        <target>Non è stato possibile raggiungere sattle.me per verificare questa chiave. Riprova tra un momento.</target>
+      </trans-unit>
+      <trans-unit id="aac2bcd8e7289001f9f0d5b4cbcdcca6">
+        <source>sattle.me: order %reference% was not canceled: a bitcoin invoice of it is being made right now. Try again in a moment. If you changed several orders at once, the change stopped at this order: the ones after it were left as they were.</source>
+        <target>sattle.me: l'ordine %reference% non è stato annullato: una fattura bitcoin di questo ordine è in corso di creazione. Riprova tra un momento. Se hai modificato più ordini alla volta, la modifica si è fermata a questo ordine: quelli successivi sono rimasti invariati.</target>
+      </trans-unit>
+      <trans-unit id="9e4f4b1e57b2395f2387361d29880ffd">
+        <source>sattle.me: order %reference% was not canceled: bitcoin came for it (paid, or an underpayment that reached your wallet). Settle it with the customer: refund them from your wallet, then record the refund (a credit slip, the state "Refunded"). If you changed several orders at once, the change stopped at this order: the ones after it were left as they were.</source>
+        <target>sattle.me: l'ordine %reference% non è stato annullato: per esso sono arrivati dei bitcoin (pagato, oppure un pagamento insufficiente che ha raggiunto il tuo wallet). Regolalo con il cliente: rimborsalo dal tuo wallet, poi registra il rimborso (una nota di credito, lo stato «Rimborsato»). Se hai modificato più ordini alla volta, la modifica si è fermata a questo ordine: quelli successivi sono rimasti invariati.</target>
+      </trans-unit>
+      <trans-unit id="9f3a34b2ae66dec29f254d8032c2d7b0">
+        <source>sattle.me: order %reference% was not canceled: its bitcoin invoice can still be paid, its payment is being confirmed, or its final status is not known yet. It can be canceled once its invoice has ended unpaid. If you changed several orders at once, the change stopped at this order: the ones after it were left as they were.</source>
+        <target>sattle.me: l'ordine %reference% non è stato annullato: la sua fattura bitcoin può ancora essere pagata, il suo pagamento è in corso di conferma, oppure il suo stato finale non è ancora noto. Potrà essere annullato una volta che la sua fattura sarà terminata senza pagamento. Se hai modificato più ordini alla volta, la modifica si è fermata a questo ordine: quelli successivi sono rimasti invariati.</target>
+      </trans-unit>
+      <trans-unit id="3b7ea774f5290aee77d711598b269ef0">
+        <source>sattle.me: the products of order %reference% were not canceled, nor removed: a bitcoin invoice of it is being made right now. Try again in a moment.</source>
+        <target>sattle.me: i prodotti dell'ordine %reference% non sono stati né annullati né rimossi: una fattura bitcoin di questo ordine è in corso di creazione. Riprova tra un momento.</target>
+      </trans-unit>
+      <trans-unit id="eb62d6f467b77913d9b977a8e62d2998">
+        <source>sattle.me: the products of order %reference% were not canceled, nor removed: bitcoin came for it (paid, or an underpayment that reached your wallet). Settle it with the customer: refund them from your wallet, then record the refund (the state "Refunded").</source>
+        <target>sattle.me: i prodotti dell'ordine %reference% non sono stati né annullati né rimossi: per esso sono arrivati dei bitcoin (pagato, oppure un pagamento insufficiente che ha raggiunto il tuo wallet). Regolalo con il cliente: rimborsalo dal tuo wallet, poi registra il rimborso (lo stato «Rimborsato»).</target>
+      </trans-unit>
+      <trans-unit id="dd703f6603228cd4caca1cd477ca6f9c">
+        <source>sattle.me: the products of order %reference% were not canceled, nor removed: its bitcoin invoice can still be paid, at its amount, its payment is being confirmed, or its final status is not known yet. They can be canceled once its invoice has ended unpaid.</source>
+        <target>sattle.me: i prodotti dell'ordine %reference% non sono stati né annullati né rimossi: la sua fattura bitcoin può ancora essere pagata, al suo importo, il suo pagamento è in corso di conferma, oppure il suo stato finale non è ancora noto. Potranno essere annullati una volta che la sua fattura sarà terminata senza pagamento.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

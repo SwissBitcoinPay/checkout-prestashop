@@ -1,0 +1,110 @@
+name: Release
+
+# A maintainer pushes a tag vX.Y.Z on a commit of main (never a development or agent session).
+# This workflow runs the CI again, checks that the tag is the module's version (sattleme.php,
+# config.xml and CHANGELOG.md) and that its commit is on main, builds the module's ZIP from the
+# lockfile and checks it (tools/build.sh: build/sattleme.zip, as PrestaShop Addons takes a module),
+# then, once the CI passed, keeps it with its SHA-256 as the workflow's artifact, for 90 days. The
+# module is distributed only through PrestaShop Addons, whose seller account takes a new version by
+# an upload in its back office (no API, no stored secret): the team submits the ZIP kept here. No
+# GitHub release. See README.md, "Releases".
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  COMPOSER_URL: https://getcomposer.org/download/2.11.2/composer.phar
+  COMPOSER_SHA256: dd158c0afd41d15fac89e1b4e47b5d42911fe316c3687cd5edac98319b25d028
+
+jobs:
+  ci:
+    name: CI
+    uses: ./.github/workflows/ci.yml
+
+  build:
+    name: Check the tag, build the ZIP and keep it
+    # Kept only once the CI passed on the tag's commit.
+    needs: ci
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PHP_VERSION: 8.4.23
+      PHP_SHA256: 5fa2b5f1cc9d7f79b19718926b4f4f0bb6949db52073b2fabf8ae52de3993af5
+      SCOPER_URL: https://github.com/humbug/php-scoper/releases/download/0.18.20/php-scoper.phar
+      SCOPER_SHA256: 5e35e4a89ea53b2c70a19bfa8a856e4f9080aa12eb13a5bce650bb69d08eb122
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          # Every branch's history, to tell whether the tag's commit is on main.
+          fetch-depth: 0
+      - name: The tag is vX.Y.Z, the version of the module, on a commit of main
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          if ! echo "$TAG" | grep -Eq '^v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$'; then
+            echo "::error::$TAG is not vX.Y.Z"
+            exit 1
+          fi
+          version="${TAG#v}"
+          class="$(sed -n "s/^    public const VERSION = '\(.*\)';$/\1/p" sattleme/sattleme.php)"
+          config="$(sed -n 's/^ *<version><!\[CDATA\[\(.*\)\]\]><\/version>$/\1/p' sattleme/config.xml)"
+          if [ "$class" != "$version" ] || [ "$config" != "$version" ]; then
+            echo "::error::The module declares $class (sattleme.php) and $config (config.xml), the tag is $TAG"
+            exit 1
+          fi
+          if ! grep -q "^## $version\$" CHANGELOG.md; then
+            echo "::error::CHANGELOG.md has no section for $version"
+            exit 1
+          fi
+          if ! git merge-base --is-ancestor "$GITHUB_SHA" refs/remotes/origin/main; then
+            echo "::error::The commit of $TAG is not on main"
+            exit 1
+          fi
+      - name: PHP ${{ env.PHP_VERSION }} and Composer, their checksums checked
+        run: |
+          mkdir -p "$RUNNER_TEMP/php" "$RUNNER_TEMP/composer"
+          curl -fsSL -o "$RUNNER_TEMP/php.tar.gz" "https://dl.static-php.dev/static-php-cli/bulk/php-$PHP_VERSION-cli-linux-x86_64.tar.gz"
+          echo "$PHP_SHA256  $RUNNER_TEMP/php.tar.gz" | sha256sum -c -
+          tar -xzf "$RUNNER_TEMP/php.tar.gz" -C "$RUNNER_TEMP/php" php
+          curl -fsSL -o "$RUNNER_TEMP/php/composer" "$COMPOSER_URL"
+          echo "$COMPOSER_SHA256  $RUNNER_TEMP/php/composer" | sha256sum -c -
+          chmod +x "$RUNNER_TEMP/php/composer"
+          printf 'zend.assertions=1\nerror_reporting=-1\nmemory_limit=1G\n' > "$RUNNER_TEMP/php/php.ini"
+          { echo "PHPRC=$RUNNER_TEMP/php"; echo "COMPOSER_HOME=$RUNNER_TEMP/composer"; } >> "$GITHUB_ENV"
+          echo "$RUNNER_TEMP/php" >> "$GITHUB_PATH"
+      # The build's tools: Composer installs the runtime libraries from the lockfile.
+      - run: composer install --no-interaction --no-progress
+        env:
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ github.token }}"}}'
+      - name: PHP-Scoper, its checksum checked
+        run: |
+          mkdir -p build
+          curl -fsSL -o build/php-scoper.phar "$SCOPER_URL"
+          echo "$SCOPER_SHA256  build/php-scoper.phar" | sha256sum -c -
+      # From the lockfile, its libraries prefixed, zipped reproducibly, checked as PrestaShop's
+      # upload and the Addons validator check a module (tools/check-zip.php).
+      - name: The module's ZIP, its libraries prefixed, checked
+        run: sh tools/build.sh build/php-scoper.phar
+        env:
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ github.token }}"}}'
+      - name: The ZIP's SHA-256
+        run: |
+          cd build
+          sha256sum sattleme.zip | tee SHA256SUMS
+      # The ZIP the team uploads to PrestaShop Addons, and its hash: the run's artifact.
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: sattleme-${{ github.ref_name }}
+          path: |
+            build/sattleme.zip
+            build/SHA256SUMS
+          if-no-files-found: error
+          retention-days: 90

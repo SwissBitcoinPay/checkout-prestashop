@@ -1,0 +1,244 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+5 0 obj
+<< /Length 5020 >>
+stream
+BT /B 20 Tf 62 746 Td (sattle.me pour PrestaShop\240: guide d'utilisation) Tj ET
+BT /R 10.5 Tf 62 721.5 Td (Le module sattle.me permet \340 vos clients de payer leurs commandes en bitcoin, par Lightning ou) Tj ET
+BT /R 10.5 Tf 62 707 Td (on-chain. Les bitcoins vont directement dans votre portefeuille sattle.me\240: la boutique cr\351e et v\351rifie) Tj ET
+BT /R 10.5 Tf 62 692.5 Td (elle-m\352me les factures, et la cl\351 qu'elle d\351tient peut cr\351er des factures qui vous paient, jamais) Tj ET
+BT /R 10.5 Tf 62 678 Td (d\351penser vos fonds.) Tj ET
+BT /B 13 Tf 62 643 Td (Avant de commencer) Tj ET
+BT /R 10.5 Tf 66 625.5 Td (\225) Tj ET
+BT /R 10.5 Tf 78 625.5 Td (PrestaShop 9.0, 9.1 ou 9.2, sur PHP 8.2 ou plus r\351cent \(64 bits\). Le module v\351rifie le serveur \340) Tj ET
+BT /R 10.5 Tf 78 611 Td (son installation, et dit ce qui manque, le cas \351ch\351ant.) Tj ET
+BT /R 10.5 Tf 66 590.5 Td (\225) Tj ET
+BT /R 10.5 Tf 78 590.5 Td (Un compte marchand sattle.me, et son application.) Tj ET
+BT /R 10.5 Tf 66 570 Td (\225) Tj ET
+BT /R 10.5 Tf 78 570 Td (Le cron du syst\350me sur le serveur de la boutique, pour appeler l'adresse du module chaque) Tj ET
+BT /R 10.5 Tf 78 555.5 Td (minute \(voir \253\240V\351rifications en arri\350re-plan\240\273\).) Tj ET
+BT /R 10.5 Tf 66 535 Td (\225) Tj ET
+BT /R 10.5 Tf 78 535 Td (Des connexions sortantes depuis le serveur de la boutique\240: vers les relais du marchand, son) Tj ET
+BT /R 10.5 Tf 78 520.5 Td (adresse Lightning, les sources de taux de change, un explorateur de blocs \(ou votre propre) Tj ET
+BT /R 10.5 Tf 78 506 Td (serveur Bitcoin, si vous en indiquez un dans l'app sattle.me\) et, pour une transaction qu'aucune) Tj ET
+BT /R 10.5 Tf 78 491.5 Td (v\351rification n'a vue \340 temps, un second service de la blockchain. Le navigateur du client ne parle) Tj ET
+BT /R 10.5 Tf 78 477 Td (qu'\340 la boutique.) Tj ET
+BT /B 13 Tf 62 442 Td (Installation) Tj ET
+BT /R 10.5 Tf 62 424.5 Td (1.) Tj ET
+BT /R 10.5 Tf 78 424.5 Td (Obtenez le module sur PrestaShop Addons\240: son fichier, ) Tj ET
+BT /C 10.5 Tf 342.38 424.5 Td (sattleme.zip) Tj ET
+BT /R 10.5 Tf 417.98 424.5 Td (, se trouve alors dans) Tj ET
+BT /R 10.5 Tf 78 410 Td (votre compte Addons.) Tj ET
+BT /R 10.5 Tf 62 389.5 Td (2.) Tj ET
+BT /R 10.5 Tf 78 389.5 Td (Dans le back-office, ouvrez ) Tj ET
+BT /B 10.5 Tf 207.55 389.5 Td (Modules) Tj ET
+BT /R 10.5 Tf 250.14 389.5 Td (, puis le ) Tj ET
+BT /B 10.5 Tf 289.24 389.5 Td (Gestionnaire de modules) Tj ET
+BT /R 10.5 Tf 414.69 389.5 Td (, et envoyez) Tj ET
+BT /C 10.5 Tf 78 375 Td (sattleme.zip) Tj ET
+BT /R 10.5 Tf 153.6 375 Td (. PrestaShop installe le module.) Tj ET
+BT /R 10.5 Tf 62 354.5 Td (Pour mettre le module \340 jour, envoyez sa nouvelle version de la m\352me fa\347on. D\351sinstall\351, le module) Tj ET
+BT /R 10.5 Tf 62 340 Td (supprime ses r\351glages et sa cl\351\240; il garde les enregistrements de ses paiements et ses \351tats de) Tj ET
+BT /R 10.5 Tf 62 325.5 Td (commande, auxquels vos commandes se r\351f\350rent.) Tj ET
+BT /B 13 Tf 62 290.5 Td (Configuration) Tj ET
+BT /R 10.5 Tf 62 273 Td (1.) Tj ET
+BT /R 10.5 Tf 78 273 Td (Dans l'application sattle.me, cr\351ez une int\351gration pour votre boutique, et copiez sa cl\351 secr\350te) Tj ET
+BT /R 10.5 Tf 78 258.5 Td (\(elle commence par ) Tj ET
+BT /C 10.5 Tf 173.11 258.5 Td (sattleme_ck_) Tj ET
+BT /R 10.5 Tf 248.71 258.5 Td (\).) Tj ET
+BT /R 10.5 Tf 62 238 Td (2.) Tj ET
+BT /R 10.5 Tf 78 238 Td (Dans le back-office, trouvez ) Tj ET
+BT /B 10.5 Tf 210.47 238 Td (sattle.me ) Tj ET
+BT /R 10.5 Tf 258.9 238 Td (dans le gestionnaire de modules, et cliquez sur) Tj ET
+BT /B 10.5 Tf 78 223.5 Td (Configurer) Tj ET
+BT /R 10.5 Tf 131.67 223.5 Td (.) Tj ET
+BT /R 10.5 Tf 62 203 Td (3.) Tj ET
+BT /R 10.5 Tf 78 203 Td (Collez la cl\351 dans ) Tj ET
+BT /B 10.5 Tf 163.2 203 Td (Cl\351 d'int\351gration) Tj ET
+BT /R 10.5 Tf 245.62 203 Td (, et enregistrez. Le module la v\351rifie aussit\364t, et refuse une) Tj ET
+BT /R 10.5 Tf 78 188.5 Td (cl\351 qu'il ne peut pas utiliser. Une fois enregistr\351e, la cl\351 n'est plus jamais affich\351e\240: laissez le) Tj ET
+BT /R 10.5 Tf 78 174 Td (champ vide pour la garder.) Tj ET
+BT /R 10.5 Tf 62 153.5 Td (4.) Tj ET
+BT /R 10.5 Tf 78 153.5 Td (Activez ) Tj ET
+BT /B 10.5 Tf 114.76 153.5 Td (Accepter les paiements en bitcoin) Tj ET
+BT /R 10.5 Tf 284.57 153.5 Td (.) Tj ET
+BT /R 10.5 Tf 62 133 Td (5.) Tj ET
+BT /B 10.5 Tf 78 133 Td (D\351lai de paiement) Tj ET
+BT /R 10.5 Tf 167.28 133 Td (\240: le temps dont dispose un client pour payer une facture, de 1 \340 60 minutes) Tj ET
+BT /R 10.5 Tf 78 118.5 Td (\(15 par d\351faut\).) Tj ET
+BT /R 10.5 Tf 62 98 Td (6.) Tj ET
+BT /R 10.5 Tf 78 98 Td (Si vous le souhaitez, modifiez le ) Tj ET
+BT /B 10.5 Tf 230.31 98 Td (Titre au paiement ) Tj ET
+BT /R 10.5 Tf 320.17 98 Td (et la ) Tj ET
+BT /B 10.5 Tf 342.94 98 Td (Description au paiement) Tj ET
+BT /R 10.5 Tf 464.88 98 Td (, dans) Tj ET
+BT /R 10.5 Tf 78 83.5 Td (chacune des langues de la boutique.) Tj ET
+BT /R 9 Tf 288.74 40 Td (1 / 3) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /R 1 0 R /B 2 0 R /C 3 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 5820 >>
+stream
+BT /R 10.5 Tf 62 757.5 Td (7.) Tj ET
+BT /R 10.5 Tf 78 757.5 Td (Configurez le cron avec la ligne qu'affiche la page des r\351glages \(voir \253\240V\351rifications en) Tj ET
+BT /R 10.5 Tf 78 743 Td (arri\350re-plan\240\273\).) Tj ET
+BT /R 10.5 Tf 62 722.5 Td (Les restrictions de PrestaShop pour un moyen de paiement s'appliquent aussi \() Tj ET
+BT /B 10.5 Tf 431.1 722.5 Td (Paiement) Tj ET
+BT /R 10.5 Tf 477.78 722.5 Td (, puis) Tj ET
+BT /B 10.5 Tf 62 708 Td (Pr\351f\351rences) Tj ET
+BT /R 10.5 Tf 122.11 708 Td (\)\240: devises, pays, groupes de clients et transporteurs. Utilisez une cl\351 d'int\351gration pour) Tj ET
+BT /R 10.5 Tf 62 693.5 Td (une seule boutique, et ne la changez que lorsqu'aucun paiement en bitcoin n'est en attente. sattle.me) Tj ET
+BT /R 10.5 Tf 62 679 Td (n'a pas de r\351seau de test\240: chaque paiement est un vrai paiement en bitcoin, vers votre portefeuille.) Tj ET
+BT /B 13 Tf 62 644 Td (Paiements et commandes) Tj ET
+BT /R 10.5 Tf 62 626.5 Td (1.) Tj ET
+BT /R 10.5 Tf 78 626.5 Td (Au moment de payer, le client choisit ) Tj ET
+BT /B 10.5 Tf 252.49 626.5 Td (Payer en bitcoin) Tj ET
+BT /R 10.5 Tf 333.6 626.5 Td (. Quand il passe la commande, le module) Tj ET
+BT /R 10.5 Tf 78 612 Td (obtient d'abord la facture\240; alors seulement PrestaShop cr\351e la commande, dans l'\351tat ) Tj ET
+BT /B 10.5 Tf 479.46 612 Td (En attente) Tj ET
+BT /B 10.5 Tf 78 597.5 Td (du paiement bitcoin) Tj ET
+BT /R 10.5 Tf 177.18 597.5 Td (. Si la facture ne peut pas \352tre cr\351\351e, aucune commande n'est cr\351\351e, et le) Tj ET
+BT /R 10.5 Tf 78 583 Td (client peut choisir un autre moyen.) Tj ET
+BT /R 10.5 Tf 62 562.5 Td (2.) Tj ET
+BT /R 10.5 Tf 78 562.5 Td (Le client arrive sur la page de paiement de la boutique\240: un code QR, un bouton qui ouvre son) Tj ET
+BT /R 10.5 Tf 78 548 Td (portefeuille, la facture Lightning et l'adresse \340 copier, le montant en sats, en bitcoin et dans la) Tj ET
+BT /R 10.5 Tf 78 533.5 Td (devise de la commande, et le temps restant pour payer.) Tj ET
+BT /R 10.5 Tf 62 513 Td (3.) Tj ET
+BT /R 10.5 Tf 78 513 Td (La page suit le paiement d'elle-m\352me. Un paiement on-chain met la commande dans l'\351tat) Tj ET
+BT /B 10.5 Tf 78 498.5 Td (Paiement bitcoin en cours de confirmation ) Tj ET
+BT /R 10.5 Tf 293.3 498.5 Td (jusqu'\340 ses 3 confirmations \(environ 30 minutes\).) Tj ET
+BT /R 10.5 Tf 62 478 Td (4.) Tj ET
+BT /R 10.5 Tf 78 478 Td (Une fois le paiement complet, le module l'enregistre et la commande passe \340 ) Tj ET
+BT /B 10.5 Tf 438.91 478 Td (Paiement) Tj ET
+BT /B 10.5 Tf 78 463.5 Td (accept\351) Tj ET
+BT /R 10.5 Tf 117.1 463.5 Td (\240: PrestaShop envoie son e-mail et cr\351e sa facture, comme pour tout paiement. Un) Tj ET
+BT /R 10.5 Tf 78 449 Td (paiement on-chain inf\351rieur au montant est complet aussi quand votre tol\351rance l'accepte, ou) Tj ET
+BT /R 10.5 Tf 78 434.5 Td (quand vous acceptez dans l'application sattle.me ce que la commande a re\347u\240: une note sur la) Tj ET
+BT /R 10.5 Tf 78 420 Td (commande dit ce qui est arriv\351.) Tj ET
+BT /R 10.5 Tf 62 399.5 Td (Si la commande a chang\351 apr\350s la cr\351ation de sa facture \(son total, sa devise, un autre paiement ou) Tj ET
+BT /R 10.5 Tf 62 385 Td (un avoir\), ou si elle a \351t\351 rembours\351e entre-temps, un paiement qui arrive malgr\351 tout est enregistr\351,) Tj ET
+BT /R 10.5 Tf 62 370.5 Td (et la commande passe \340 ) Tj ET
+BT /B 10.5 Tf 179.31 370.5 Td (Paiement bitcoin \340 v\351rifier) Tj ET
+BT /R 10.5 Tf 310.02 370.5 Td (, jamais \340 \253\240Paiement accept\351\240\273. Une note sur) Tj ET
+BT /R 10.5 Tf 62 356 Td (la commande donne les sats re\347us, le prix de la facture et ce que la commande doit d\351sormais. Les) Tj ET
+BT /R 10.5 Tf 62 341.5 Td (pages du client disent que le paiement a \351t\351 re\347u et que la boutique le contactera. R\351glez la) Tj ET
+BT /R 10.5 Tf 62 327 Td (diff\351rence avec le client, puis changez vous-m\352me l'\351tat de la commande\240: r\351tablissez la commande,) Tj ET
+BT /R 10.5 Tf 62 312.5 Td (ou remboursez le client.) Tj ET
+BT /R 10.5 Tf 62 292 Td (Une facture qui se termine sans paiement laisse la commande en attente de paiement, et sa page de) Tj ET
+BT /R 10.5 Tf 62 277.5 Td (paiement propose au client une nouvelle facture. Le module n'annule jamais une commande\240:) Tj ET
+BT /R 10.5 Tf 62 263 Td (annulez vous-m\352me une commande impay\351e une fois sa facture termin\351e sans paiement, comme) Tj ET
+BT /R 10.5 Tf 62 248.5 Td (pour un paiement par virement. Tant que sa facture peut encore \352tre pay\351e ou que son paiement est) Tj ET
+BT /R 10.5 Tf 62 234 Td (en cours de confirmation, et d\350s que des bitcoins sont arriv\351s pour elle \(pay\351e, ou moins que le) Tj ET
+BT /R 10.5 Tf 62 219.5 Td (montant, qui a atteint votre portefeuille\), le module refuse d'annuler la commande \(les \351tats ) Tj ET
+BT /B 10.5 Tf 487.7 219.5 Td (Annul\351) Tj ET
+BT /R 10.5 Tf 62 205 Td (et ) Tj ET
+BT /B 10.5 Tf 73.68 205 Td (Erreur de paiement) Tj ET
+BT /R 10.5 Tf 169.37 205 Td (\), et le back-office dit pourquoi\240: r\351glez ce qui est arriv\351 avec le client,) Tj ET
+BT /R 10.5 Tf 62 190.5 Td (remboursez-le depuis votre portefeuille, puis enregistrez le remboursement \(un avoir, l'\351tat) Tj ET
+BT /B 10.5 Tf 62 176 Td (Rembours\351) Tj ET
+BT /R 10.5 Tf 119.76 176 Td (\).) Tj ET
+BT /R 10.5 Tf 62 155.5 Td (La page de la commande dans le back-office montre chaque tentative de paiement\240: sa r\351f\351rence, le) Tj ET
+BT /R 10.5 Tf 62 141 Td (montant et le taux de change, comment elle a \351t\351 pay\351e, l'adresse et les transactions \(en texte \340) Tj ET
+BT /R 10.5 Tf 62 126.5 Td (copier\), la preuve de paiement, la derni\350re v\351rification et la suivante, et son erreur en termes) Tj ET
+BT /R 10.5 Tf 62 112 Td (simples.) Tj ET
+BT /R 9 Tf 288.74 40 Td (2 / 3) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /R 1 0 R /B 2 0 R /C 3 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 4477 >>
+stream
+BT /B 13 Tf 62 755 Td (V\351rifications en arri\350re-plan) Tj ET
+BT /R 10.5 Tf 62 737.5 Td (Le module v\351rifie les factures depuis le serveur de la boutique. Tant que la page de paiement d'un) Tj ET
+BT /R 10.5 Tf 62 723 Td (client est ouverte, il v\351rifie souvent\240; pour le reste, le cron du syst\350me appelle l'adresse du module) Tj ET
+BT /R 10.5 Tf 62 708.5 Td (chaque minute, avec le jeton secret de la boutique. La page des r\351glages affiche cette adresse et) Tj ET
+BT /R 10.5 Tf 62 694 Td (une ligne pr\352te pour la crontab de l'utilisateur du serveur web. Dans une installation multiboutique, la) Tj ET
+BT /R 10.5 Tf 62 679.5 Td (page liste une adresse pour chaque boutique\240: le cron les appelle toutes.) Tj ET
+BT /R 10.5 Tf 62 659 Td (La page des r\351glages indique quand les v\351rifications ont tourn\351 pour la derni\350re fois, et vous avertit) Tj ET
+BT /R 10.5 Tf 62 644.5 Td (si c'\351tait il y a plus de 10 minutes. Sans le cron, les paiements ne sont v\351rifi\351s que tant que la page) Tj ET
+BT /R 10.5 Tf 62 630 Td (du client, ou la page de la commande dans le back-office, est ouverte.) Tj ET
+BT /B 13 Tf 62 595 Td (Remboursements) Tj ET
+BT /R 10.5 Tf 62 577.5 Td (Les remboursements ne sont jamais automatiques\240: un paiement Lightning ne peut \352tre rembours\351) Tj ET
+BT /R 10.5 Tf 62 563 Td (que vers une facture du client, un paiement on-chain vers une de ses adresses, que la boutique ne) Tj ET
+BT /R 10.5 Tf 62 548.5 Td (demande jamais. Demandez-en une au client, remboursez-le depuis votre portefeuille, puis) Tj ET
+BT /R 10.5 Tf 62 534 Td (enregistrez le remboursement dans PrestaShop \(un avoir, l'\351tat de la commande\).) Tj ET
+BT /B 13 Tf 62 499 Td (Donn\351es personnelles) Tj ET
+BT /R 10.5 Tf 66 481.5 Td (\225) Tj ET
+BT /R 10.5 Tf 78 481.5 Td (Le module enregistre, pour chaque tentative de paiement\240: sa r\351f\351rence, le panier et la) Tj ET
+BT /R 10.5 Tf 78 467 Td (commande, le montant et la devise, la facture \(montant en sats, taux de change, facture) Tj ET
+BT /R 10.5 Tf 78 452.5 Td (Lightning, adresse de d\351p\364t\) et ce que ses v\351rifications ont trouv\351. Ni nom ni adresse e-mail\240:) Tj ET
+BT /R 10.5 Tf 78 438 Td (ceux du client sont ceux de PrestaShop.) Tj ET
+BT /R 10.5 Tf 66 417.5 Td (\225) Tj ET
+BT /R 10.5 Tf 78 417.5 Td (Le serveur de la boutique envoie chaque facture aux relais du marchand, chiffr\351e pour le) Tj ET
+BT /R 10.5 Tf 78 403 Td (marchand, avec le nom de la boutique et la r\351f\351rence de la commande\240; il demande la facture \340) Tj ET
+BT /R 10.5 Tf 78 388.5 Td (l'adresse Lightning du marchand, le prix du bitcoin aux sources de taux de change, et l'adresse et) Tj ET
+BT /R 10.5 Tf 78 374 Td (les transactions d'une facture on-chain \340 un explorateur de blocs\240: par d\351faut un explorateur) Tj ET
+BT /R 10.5 Tf 78 359.5 Td (public, ou votre propre serveur Bitcoin si vous en indiquez un dans l'app sattle.me \(avec) Tj ET
+BT /R 10.5 Tf 78 345 Td (l'explorateur public en secours, sauf si vous n'en voulez aucun\). Chacun d'eux voit le serveur de) Tj ET
+BT /R 10.5 Tf 78 330.5 Td (la boutique, jamais le client.) Tj ET
+BT /R 10.5 Tf 66 310 Td (\225) Tj ET
+BT /R 10.5 Tf 78 310 Td (Avec le module RGPD de PrestaShop, l'export d'un client contient ses paiements en bitcoin, et) Tj ET
+BT /R 10.5 Tf 78 295.5 Td (son effacement en retire les adresses de d\351p\364t et les transactions\240; les r\351f\351rences, montants,) Tj ET
+BT /R 10.5 Tf 78 281 Td (taux, dates et \351tats restent, pour votre comptabilit\351.) Tj ET
+BT /B 13 Tf 62 246 Td (En cas de probl\350me) Tj ET
+BT /R 10.5 Tf 62 228.5 Td (Les journaux de PrestaShop \() Tj ET
+BT /B 10.5 Tf 200.9 228.5 Td (Param\350tres avanc\351s) Tj ET
+BT /R 10.5 Tf 302.46 228.5 Td (, puis ) Tj ET
+BT /B 10.5 Tf 330.47 228.5 Td (Logs) Tj ET
+BT /R 10.5 Tf 355.56 228.5 Td (, messages commen\347ant par) Tj ET
+BT /C 10.5 Tf 62 214 Td (sattle.me:) Tj ET
+BT /R 10.5 Tf 125 214 Td (\) disent ce qui s'est mal pass\351, jamais avec la cl\351. La page de la commande dans le) Tj ET
+BT /R 10.5 Tf 62 199.5 Td (back-office montre la derni\350re v\351rification de chaque paiement et son erreur. Une commande dans) Tj ET
+BT /R 10.5 Tf 62 185 Td (l'\351tat ) Tj ET
+BT /B 10.5 Tf 86.77 185 Td (Paiement bitcoin \340 v\351rifier ) Tj ET
+BT /R 10.5 Tf 220.4 185 Td (vous attend\240: lisez sa note, r\351glez avec le client, puis changez son) Tj ET
+BT /R 10.5 Tf 62 170.5 Td (\351tat.) Tj ET
+BT /R 9 Tf 288.74 40 Td (3 / 3) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /R 1 0 R /B 2 0 R /C 3 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Type /Catalog /Pages 4 0 R /Lang (fr) >>
+endobj
+12 0 obj
+<< /Title <FEFF0073006100740074006C0065002E006D006500200070006F00750072002000500072006500730074006100530068006F00700020003A002000670075006900640065002000640027007500740069006C00690073006100740069006F006E> /Producer (sattle.me tools/UserGuide.php) >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000000309 00000 n 
+0000000379 00000 n 
+0000005450 00000 n 
+0000005593 00000 n 
+0000011464 00000 n 
+0000011607 00000 n 
+0000016135 00000 n 
+0000016279 00000 n 
+0000016340 00000 n 
+trailer
+<< /Size 13 /Root 11 0 R /Info 12 0 R >>
+startxref
+16606
+%%EOF

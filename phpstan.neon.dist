@@ -1,0 +1,26 @@
+# PHPStan at its strictest level, with its strict rules, on the module, its tests and its tools,
+# against PrestaShop's own sources (php-dev-tools' extension: set _PS_ROOT_DIR_ to a PrestaShop
+# directory, as the CI does) and the prefixed libraries of the built module (tools/build.sh).
+includes:
+    - vendor/prestashop/php-dev-tools/phpstan/ps-module-extension.neon
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
+
+parameters:
+    level: max
+    # The module refuses to install on PHP 8.1 (PrestaShop 9 runs on it), with a message: its own
+    # code must run there up to that check.
+    phpVersion:
+        min: 80100
+        max: 80599
+    paths:
+        - sattleme
+        - tests
+        - tools
+    bootstrapFiles:
+        - tests/phpstan-bootstrap.php
+    scanDirectories:
+        - build/sattleme/vendor
+    tmpDir: build/phpstan
+    treatPhpDocTypesAsCertain: false

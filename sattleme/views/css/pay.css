@@ -1,0 +1,100 @@
+/**
+ * sattle.me for PrestaShop
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License that is bundled with this module in the file
+ * LICENSE, also available at https://opensource.org/licenses/MIT
+ *
+ * @author    sattle.me
+ * @copyright 2026 sattle.me
+ * @license   https://opensource.org/licenses/MIT MIT License
+ */
+/* The payment page: the theme's own styles, a layout for the QR code and the invoice. */
+.sattleme-pay [hidden] {
+  display: none !important;
+}
+
+.sattleme-pay__order {
+  margin-bottom: 1rem;
+}
+
+.sattleme-pay__invoice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.sattleme-pay__qr {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.sattleme-pay__qr img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e3e6ec;
+  border-radius: 4px;
+}
+
+.sattleme-pay__details {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.sattleme-pay__amount dt {
+  font-weight: normal;
+}
+
+.sattleme-pay__amount dd {
+  margin-bottom: 0.75rem;
+}
+
+.sattleme-pay__sats {
+  display: block;
+  font-size: 1.5em;
+}
+
+.sattleme-pay__btc,
+.sattleme-pay__fiat {
+  display: block;
+}
+
+.sattleme-pay__countdown {
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+
+.sattleme-pay__value {
+  font-family: monospace;
+  font-size: 0.85em;
+  word-break: break-all;
+  resize: none;
+}
+
+.sattleme-pay__copy {
+  margin-top: 0.5rem;
+}
+
+.sattleme-pay__hint {
+  font-size: 0.9em;
+}
+
+.sattleme-pay__actions {
+  margin-top: 1rem;
+}
+
+.sattleme-pay__renew {
+  display: inline-block;
+}
+
+.sattleme-pay__reference,
+.sattleme-status__reference {
+  margin-top: 1rem;
+  font-size: 0.8em;
+  word-break: break-all;
+  opacity: 0.75;
+}

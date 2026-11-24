@@ -1,0 +1,5 @@
+# Dependencies, build outputs and caches: made again from composer.lock and the sources.
+/vendor/
+/build/
+/.php-cs-fixer.cache
+/.phpunit.cache/

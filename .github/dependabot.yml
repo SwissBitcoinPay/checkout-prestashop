@@ -1,0 +1,35 @@
+# Pull requests that keep the actions and the Composer dependencies up to date: the runtime
+# libraries embedded in the module's ZIP (the QR code encoder and its one dependency; the SDK is
+# the copy pinned in sdk/, taken by tools/sdk.php, never by Dependabot) and the development tools.
+# One grouped pull request per ecosystem. Each waits a week after a release (cooldown): time for a
+# compromised release to be found and pulled before it reaches this repository.
+#
+# Not Dependabot's: the PrestaShop versions the CI tests (its release ZIPs in tests/shop/shop.sh,
+# its Docker images in ci.yml), the PHP builds, Composer, PHP-Scoper and MariaDB, each pinned by
+# its SHA-256 or digest and updated by hand (README.md, "Development").
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns: ["*"]
+
+  - package-ecosystem: composer
+    directory: /
+    schedule:
+      interval: weekly
+    # Exact versions stay exact.
+    versioning-strategy: increase
+    cooldown:
+      default-days: 7
+    ignore:
+      # sdk/, a path repository: imported from the SDK's repository (tools/sdk.php import).
+      - dependency-name: sattleme/checkout
+    groups:
+      composer:
+        patterns: ["*"]
