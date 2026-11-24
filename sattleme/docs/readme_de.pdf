@@ -13,7 +13,7 @@ endobj
 << /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
 endobj
 5 0 obj
-<< /Length 4963 >>
+<< /Length 5190 >>
 stream
 BT /B 20 Tf 62 746 Td (sattle.me f\374r PrestaShop: Benutzerhandbuch) Tj ET
 BT /R 10.5 Tf 62 721.5 Td (Mit dem Modul sattle.me bezahlen Ihre Kunden ihre Bestellungen in Bitcoin, \374ber Lightning oder) Tj ET
@@ -37,54 +37,58 @@ BT /R 10.5 Tf 78 491.5 Td (Pr\374fung rechtzeitig gesehen hat, einem zweiten Blo
 BT /R 10.5 Tf 78 477 Td (spricht nur mit dem Shop.) Tj ET
 BT /B 13 Tf 62 442 Td (Installation) Tj ET
 BT /R 10.5 Tf 62 424.5 Td (1.) Tj ET
-BT /R 10.5 Tf 78 424.5 Td (Beziehen Sie das Modul auf PrestaShop Addons: Seine Datei, ) Tj ET
-BT /C 10.5 Tf 370.99 424.5 Td (sattleme.zip) Tj ET
-BT /R 10.5 Tf 446.59 424.5 Td (, liegt dann in) Tj ET
-BT /R 10.5 Tf 78 410 Td (Ihrem Addons-Konto.) Tj ET
-BT /R 10.5 Tf 62 389.5 Td (2.) Tj ET
-BT /R 10.5 Tf 78 389.5 Td (\326ffnen Sie im Backoffice ) Tj ET
-BT /B 10.5 Tf 195.88 389.5 Td (Module) Tj ET
-BT /R 10.5 Tf 232.63 389.5 Td (, dann den ) Tj ET
-BT /B 10.5 Tf 285.18 389.5 Td (Modul-Manager) Tj ET
-BT /R 10.5 Tf 362.76 389.5 Td (, und laden Sie ) Tj ET
-BT /C 10.5 Tf 435.72 389.5 Td (sattleme.zip) Tj ET
-BT /R 10.5 Tf 78 375 Td (hoch. PrestaShop installiert das Modul.) Tj ET
-BT /R 10.5 Tf 62 354.5 Td (Um das Modul zu aktualisieren, laden Sie seine neue Version auf dieselbe Weise hoch. Deinstalliert,) Tj ET
-BT /R 10.5 Tf 62 340 Td (entfernt das Modul seine Einstellungen und seinen Schl\374ssel; es beh\344lt die Aufzeichnungen seiner) Tj ET
-BT /R 10.5 Tf 62 325.5 Td (Zahlungen und seine Bestellstatus, auf die sich Ihre Bestellungen beziehen.) Tj ET
-BT /B 13 Tf 62 290.5 Td (Einrichtung) Tj ET
-BT /R 10.5 Tf 62 273 Td (1.) Tj ET
-BT /R 10.5 Tf 78 273 Td (Erstellen Sie in der App von sattle.me eine Integration f\374r Ihren Shop, und kopieren Sie ihren) Tj ET
-BT /R 10.5 Tf 78 258.5 Td (geheimen Schl\374ssel \(er beginnt mit ) Tj ET
-BT /C 10.5 Tf 244.9 258.5 Td (sattleme_ck_) Tj ET
-BT /R 10.5 Tf 320.5 258.5 Td (\).) Tj ET
-BT /R 10.5 Tf 62 238 Td (2.) Tj ET
-BT /R 10.5 Tf 78 238 Td (Suchen Sie im Backoffice ) Tj ET
-BT /B 10.5 Tf 199.97 238 Td (sattle.me ) Tj ET
-BT /R 10.5 Tf 248.4 238 Td (im Modul-Manager, und klicken Sie auf ) Tj ET
-BT /B 10.5 Tf 432.81 238 Td (Konfigurieren) Tj ET
-BT /R 10.5 Tf 501.64 238 Td (.) Tj ET
-BT /R 10.5 Tf 62 217.5 Td (3.) Tj ET
-BT /R 10.5 Tf 78 217.5 Td (F\374gen Sie den Schl\374ssel unter ) Tj ET
-BT /B 10.5 Tf 223.91 217.5 Td (Integrationsschl\374ssel ) Tj ET
-BT /R 10.5 Tf 334.78 217.5 Td (ein, und speichern Sie. Das Modul pr\374ft) Tj ET
-BT /R 10.5 Tf 78 203 Td (ihn sofort und lehnt einen Schl\374ssel ab, den es nicht verwenden kann. Einmal gespeichert, wird) Tj ET
-BT /R 10.5 Tf 78 188.5 Td (der Schl\374ssel nie wieder angezeigt: Lassen Sie das Feld leer, um ihn zu behalten.) Tj ET
-BT /R 10.5 Tf 62 168 Td (4.) Tj ET
-BT /R 10.5 Tf 78 168 Td (Schalten Sie ) Tj ET
-BT /B 10.5 Tf 139.87 168 Td (Bitcoin-Zahlungen akzeptieren ) Tj ET
-BT /R 10.5 Tf 295.64 168 Td (ein.) Tj ET
-BT /R 10.5 Tf 62 147.5 Td (5.) Tj ET
-BT /B 10.5 Tf 78 147.5 Td (Zahlungsfrist) Tj ET
-BT /R 10.5 Tf 144.51 147.5 Td (: wie lange ein Kunde Zeit hat, eine Rechnung zu bezahlen, 1 bis 60 Minuten) Tj ET
-BT /R 10.5 Tf 78 133 Td (\(standardm\344ssig 15\).) Tj ET
-BT /R 10.5 Tf 62 112.5 Td (6.) Tj ET
-BT /R 10.5 Tf 78 112.5 Td (\304ndern Sie nach Wunsch den ) Tj ET
-BT /B 10.5 Tf 219.82 112.5 Td (Titel an der Kasse ) Tj ET
-BT /R 10.5 Tf 312.61 112.5 Td (und die ) Tj ET
-BT /B 10.5 Tf 349.97 112.5 Td (Beschreibung an der Kasse) Tj ET
-BT /R 10.5 Tf 488.27 112.5 Td (, in jeder) Tj ET
-BT /R 10.5 Tf 78 98 Td (Sprache des Shops.) Tj ET
+BT /R 10.5 Tf 78 424.5 Td (Laden Sie ) Tj ET
+BT /C 10.5 Tf 128.2 424.5 Td (sattleme.zip) Tj ET
+BT /R 10.5 Tf 203.8 424.5 Td ( aus der neuesten Version des Moduls auf GitHub herunter: Sein) Tj ET
+BT /R 10.5 Tf 78 410 Td (Repository ist sattleme/checkout-prestashop, unter ) Tj ET
+BT /B 10.5 Tf 317.26 410 Td (Releases) Tj ET
+BT /R 10.5 Tf 362.79 410 Td (. Mit der Datei ) Tj ET
+BT /C 10.5 Tf 431.06 410 Td (SHA256SUMS) Tj ET
+BT /R 10.5 Tf 78 395.5 Td (daneben k\366nnen Sie den Download pr\374fen.) Tj ET
+BT /R 10.5 Tf 62 375 Td (2.) Tj ET
+BT /R 10.5 Tf 78 375 Td (\326ffnen Sie im Backoffice ) Tj ET
+BT /B 10.5 Tf 195.88 375 Td (Module) Tj ET
+BT /R 10.5 Tf 232.63 375 Td (, dann den ) Tj ET
+BT /B 10.5 Tf 285.18 375 Td (Modul-Manager) Tj ET
+BT /R 10.5 Tf 362.76 375 Td (, und laden Sie ) Tj ET
+BT /C 10.5 Tf 435.72 375 Td (sattleme.zip) Tj ET
+BT /R 10.5 Tf 78 360.5 Td (hoch. PrestaShop installiert das Modul.) Tj ET
+BT /R 10.5 Tf 62 340 Td (Um das Modul zu aktualisieren, laden Sie seine neue Version auf dieselbe Weise hoch. Deinstalliert,) Tj ET
+BT /R 10.5 Tf 62 325.5 Td (entfernt das Modul seine Einstellungen und seinen Schl\374ssel; es beh\344lt die Aufzeichnungen seiner) Tj ET
+BT /R 10.5 Tf 62 311 Td (Zahlungen und seine Bestellstatus, auf die sich Ihre Bestellungen beziehen.) Tj ET
+BT /B 13 Tf 62 276 Td (Einrichtung) Tj ET
+BT /R 10.5 Tf 62 258.5 Td (1.) Tj ET
+BT /R 10.5 Tf 78 258.5 Td (Erstellen Sie in der App von sattle.me eine Integration f\374r Ihren Shop, und kopieren Sie ihren) Tj ET
+BT /R 10.5 Tf 78 244 Td (geheimen Schl\374ssel \(er beginnt mit ) Tj ET
+BT /C 10.5 Tf 244.9 244 Td (sattleme_ck_) Tj ET
+BT /R 10.5 Tf 320.5 244 Td (\).) Tj ET
+BT /R 10.5 Tf 62 223.5 Td (2.) Tj ET
+BT /R 10.5 Tf 78 223.5 Td (Suchen Sie im Backoffice ) Tj ET
+BT /B 10.5 Tf 199.97 223.5 Td (sattle.me ) Tj ET
+BT /R 10.5 Tf 248.4 223.5 Td (im Modul-Manager, und klicken Sie auf ) Tj ET
+BT /B 10.5 Tf 432.81 223.5 Td (Konfigurieren) Tj ET
+BT /R 10.5 Tf 501.64 223.5 Td (.) Tj ET
+BT /R 10.5 Tf 62 203 Td (3.) Tj ET
+BT /R 10.5 Tf 78 203 Td (F\374gen Sie den Schl\374ssel unter ) Tj ET
+BT /B 10.5 Tf 223.91 203 Td (Integrationsschl\374ssel ) Tj ET
+BT /R 10.5 Tf 334.78 203 Td (ein, und speichern Sie. Das Modul pr\374ft) Tj ET
+BT /R 10.5 Tf 78 188.5 Td (ihn sofort und lehnt einen Schl\374ssel ab, den es nicht verwenden kann. Einmal gespeichert, wird) Tj ET
+BT /R 10.5 Tf 78 174 Td (der Schl\374ssel nie wieder angezeigt: Lassen Sie das Feld leer, um ihn zu behalten.) Tj ET
+BT /R 10.5 Tf 62 153.5 Td (4.) Tj ET
+BT /R 10.5 Tf 78 153.5 Td (Schalten Sie ) Tj ET
+BT /B 10.5 Tf 139.87 153.5 Td (Bitcoin-Zahlungen akzeptieren ) Tj ET
+BT /R 10.5 Tf 295.64 153.5 Td (ein.) Tj ET
+BT /R 10.5 Tf 62 133 Td (5.) Tj ET
+BT /B 10.5 Tf 78 133 Td (Zahlungsfrist) Tj ET
+BT /R 10.5 Tf 144.51 133 Td (: wie lange ein Kunde Zeit hat, eine Rechnung zu bezahlen, 1 bis 60 Minuten) Tj ET
+BT /R 10.5 Tf 78 118.5 Td (\(standardm\344ssig 15\).) Tj ET
+BT /R 10.5 Tf 62 98 Td (6.) Tj ET
+BT /R 10.5 Tf 78 98 Td (\304ndern Sie nach Wunsch den ) Tj ET
+BT /B 10.5 Tf 219.82 98 Td (Titel an der Kasse ) Tj ET
+BT /R 10.5 Tf 312.61 98 Td (und die ) Tj ET
+BT /B 10.5 Tf 349.97 98 Td (Beschreibung an der Kasse) Tj ET
+BT /R 10.5 Tf 488.27 98 Td (, in jeder) Tj ET
+BT /R 10.5 Tf 78 83.5 Td (Sprache des Shops.) Tj ET
 BT /R 9 Tf 288.74 40 Td (1 / 3) Tj ET
 endstream
 endobj
@@ -231,15 +235,15 @@ xref
 0000000214 00000 n 
 0000000309 00000 n 
 0000000379 00000 n 
-0000005393 00000 n 
-0000005536 00000 n 
-0000011499 00000 n 
-0000011642 00000 n 
-0000016045 00000 n 
-0000016189 00000 n 
-0000016250 00000 n 
+0000005620 00000 n 
+0000005763 00000 n 
+0000011726 00000 n 
+0000011869 00000 n 
+0000016272 00000 n 
+0000016416 00000 n 
+0000016477 00000 n 
 trailer
 << /Size 13 /Root 11 0 R /Info 12 0 R >>
 startxref
-16496
+16723
 %%EOF

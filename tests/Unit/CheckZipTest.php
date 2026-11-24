@@ -95,7 +95,7 @@ final class CheckZipTest extends TestCase
         }
         // Where it goes: README.md's "Releases", and a comment in the constructor.
         $readme = (string) preg_replace('/\s+/', ' ', (string) file_get_contents(BuiltModule::root() . '/README.md'));
-        self::assertStringContainsString("**Before the first upload**, the module's key", $readme);
+        self::assertStringContainsString('**PrestaShop Addons.** The ZIP stays as PrestaShop Addons takes a module', $readme);
         self::assertStringContainsString("as `\$this->module_key = '<the key>';` (one line, after `\$this->name`)", $readme);
         self::assertStringContainsString("        \$this->name = self::NAME;\n        // PrestaShop Addons' module key goes here once the product exists: README.md, \"Releases\".\n", $class);
     }
