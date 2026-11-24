@@ -11,7 +11,7 @@ Il modulo sattle.me permette ai vostri clienti di pagare i loro ordini in bitcoi
 
 ## Installazione
 
-1. Ottenete il modulo su PrestaShop Addons: il suo file, `sattleme.zip`, si trova poi nel vostro account Addons.
+1. Scaricate `sattleme.zip` dall'ultima versione del modulo su GitHub: il suo repository è sattleme/checkout-prestashop, sezione **Releases**. Il file `SHA256SUMS`, accanto, permette di verificare il download.
 2. Nel back office, aprite **Moduli**, poi la **Gestione moduli**, e caricate `sattleme.zip`. PrestaShop installa il modulo.
 
 Per aggiornare il modulo, caricate la sua nuova versione allo stesso modo. Disinstallato, il modulo rimuove le sue impostazioni e la sua chiave; conserva le registrazioni dei suoi pagamenti e i suoi stati d'ordine, a cui i vostri ordini fanno riferimento.

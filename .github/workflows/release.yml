@@ -2,12 +2,14 @@ name: Release
 
 # A maintainer pushes a tag vX.Y.Z on a commit of main (never a development or agent session).
 # This workflow runs the CI again, checks that the tag is the module's version (sattleme.php,
-# config.xml and CHANGELOG.md) and that its commit is on main, builds the module's ZIP from the
-# lockfile and checks it (tools/build.sh: build/sattleme.zip, as PrestaShop Addons takes a module),
-# then, once the CI passed, keeps it with its SHA-256 as the workflow's artifact, for 90 days. The
-# module is distributed only through PrestaShop Addons, whose seller account takes a new version by
-# an upload in its back office (no API, no stored secret): the team submits the ZIP kept here. No
-# GitHub release. See README.md, "Releases".
+# config.xml and CHANGELOG.md's section "## X.Y.Z - <date>") and that its commit is on main, builds
+# the module's ZIP from the lockfile and checks it (tools/build.sh: build/sattleme.zip, named as
+# PrestaShop takes a module), then, once the CI passed, keeps it with its SHA-256 as the workflow's
+# artifact, for 90 days. Then, approved by a maintainer in the protected environment "release", a
+# draft GitHub release of the tag gets that ZIP and its SHA256SUMS, with the CHANGELOG's section of
+# the version as its notes; a maintainer publishes the draft by hand (releases are immutable once
+# published). The module is distributed only through this repository's GitHub releases: a
+# merchant uploads the ZIP in PrestaShop's Module Manager. See README.md, "Releases".
 on:
   push:
     tags: ["v*.*.*"]
@@ -60,8 +62,9 @@ jobs:
             echo "::error::The module declares $class (sattleme.php) and $config (config.xml), the tag is $TAG"
             exit 1
           fi
-          if ! grep -q "^## $version\$" CHANGELOG.md; then
-            echo "::error::CHANGELOG.md has no section for $version"
+          # Its section's heading: "## <version> - <date>", the date in ISO 8601.
+          if ! grep -Eqx "## ${version//./\\.} - [0-9]{4}-[0-9]{2}-[0-9]{2}" CHANGELOG.md; then
+            echo "::error::CHANGELOG.md has no section \"## $version - <date>\""
             exit 1
           fi
           if ! git merge-base --is-ancestor "$GITHUB_SHA" refs/remotes/origin/main; then
@@ -108,3 +111,73 @@ jobs:
             build/SHA256SUMS
           if-no-files-found: error
           retention-days: 90
+
+  release:
+    name: Draft release
+    # Once the ZIP is built, checked and kept, from the tag's commit, the CI passed.
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    # Required reviewer: a maintainer approves each release (README.md, "Releases"). The only job
+    # that can write the repository's contents, with this run's own token; no other secret.
+    environment: release
+    permissions:
+      contents: write
+    steps:
+      # For CHANGELOG.md, the notes of the version.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # The ZIP the build kept in this run, and its SHA256SUMS.
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: sattleme-${{ github.ref_name }}
+          path: release
+      - name: The ZIP against its SHA-256, and the notes of the version
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          version="${TAG#v}"
+          test "$(find release -type f | LC_ALL=C sort | tr '\n' ' ')" = "release/SHA256SUMS release/sattleme.zip "
+          (cd release && sha256sum --check --strict SHA256SUMS)
+          # The CHANGELOG's section of the version, without its heading, then how to install.
+          awk -v heading="## $version - " 'index($0, heading) == 1 { found = 1; next } found && /^## / { exit } found { print }' \
+            CHANGELOG.md > notes.md
+          test -s notes.md
+          {
+            echo
+            echo "## Installation"
+            echo
+            echo "Download \`sattleme.zip\`, check it against \`SHA256SUMS\` (\`sha256sum -c SHA256SUMS\`), then upload it in PrestaShop's back office: **Modules → Module Manager → Upload a module** (README, \"Installation\")."
+            echo
+            echo "\`\`\`"
+            cat release/SHA256SUMS
+            echo "\`\`\`"
+          } >> notes.md
+          cat release/SHA256SUMS | tee -a "$GITHUB_STEP_SUMMARY"
+      # A draft: nothing is published until a maintainer publishes it. Refused if the tag has a
+      # release already, draft or not; then its files are read back from the draft and compared.
+      - name: Draft release ${{ github.ref_name }}, its files read back
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          existing="$(gh api --paginate "repos/$GH_REPO/releases" --jq '.[] | select(.tag_name == env.TAG) | .id')"
+          if [ -n "$existing" ]; then
+            echo "::error::$TAG has a release already: delete the draft to make it again"
+            exit 1
+          fi
+          gh release create "$TAG" release/sattleme.zip release/SHA256SUMS --draft --verify-tag \
+            --title "sattle.me for PrestaShop ${TAG#v}" --notes-file notes.md
+          id="$(gh api --paginate "repos/$GH_REPO/releases" --jq '.[] | select(.tag_name == env.TAG and .draft) | .id')"
+          test -n "$id"
+          test "$(printf '%s\n' "$id" | wc -l)" -eq 1
+          mkdir check
+          for name in sattleme.zip SHA256SUMS; do
+            asset="$(gh api "repos/$GH_REPO/releases/$id/assets" --jq ".[] | select(.name == \"$name\") | .id")"
+            test -n "$asset"
+            gh api -H "Accept: application/octet-stream" "repos/$GH_REPO/releases/assets/$asset" > "check/$name"
+            cmp "check/$name" "release/$name"
+          done
+          echo "Draft release $TAG made: publish it once read." | tee -a "$GITHUB_STEP_SUMMARY"

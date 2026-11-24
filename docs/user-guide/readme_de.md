@@ -11,7 +11,7 @@ Mit dem Modul sattle.me bezahlen Ihre Kunden ihre Bestellungen in Bitcoin, über
 
 ## Installation
 
-1. Beziehen Sie das Modul auf PrestaShop Addons: Seine Datei, `sattleme.zip`, liegt dann in Ihrem Addons-Konto.
+1. Laden Sie `sattleme.zip` aus der neuesten Version des Moduls auf GitHub herunter: Sein Repository ist sattleme/checkout-prestashop, unter **Releases**. Mit der Datei `SHA256SUMS` daneben können Sie den Download prüfen.
 2. Öffnen Sie im Backoffice **Module**, dann den **Modul-Manager**, und laden Sie `sattleme.zip` hoch. PrestaShop installiert das Modul.
 
 Um das Modul zu aktualisieren, laden Sie seine neue Version auf dieselbe Weise hoch. Deinstalliert, entfernt das Modul seine Einstellungen und seinen Schlüssel; es behält die Aufzeichnungen seiner Zahlungen und seine Bestellstatus, auf die sich Ihre Bestellungen beziehen.

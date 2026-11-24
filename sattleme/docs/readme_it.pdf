@@ -13,7 +13,7 @@ endobj
 << /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
 endobj
 5 0 obj
-<< /Length 4983 >>
+<< /Length 5230 >>
 stream
 BT /B 20 Tf 62 746 Td (sattle.me per PrestaShop: guida all'uso) Tj ET
 BT /R 10.5 Tf 62 721.5 Td (Il modulo sattle.me permette ai vostri clienti di pagare i loro ordini in bitcoin, con Lightning o on-chain.) Tj ET
@@ -35,58 +35,63 @@ BT /R 10.5 Tf 78 520.5 Td (uno nell'app sattle.me\) e, per una transazione che n
 BT /R 10.5 Tf 78 506 Td (servizio della blockchain. Il browser del cliente parla solo con il negozio.) Tj ET
 BT /B 13 Tf 62 471 Td (Installazione) Tj ET
 BT /R 10.5 Tf 62 453.5 Td (1.) Tj ET
-BT /R 10.5 Tf 78 453.5 Td (Ottenete il modulo su PrestaShop Addons: il suo file, ) Tj ET
-BT /C 10.5 Tf 326.04 453.5 Td (sattleme.zip) Tj ET
-BT /R 10.5 Tf 401.64 453.5 Td (, si trova poi nel vostro) Tj ET
-BT /R 10.5 Tf 78 439 Td (account Addons.) Tj ET
-BT /R 10.5 Tf 62 418.5 Td (2.) Tj ET
-BT /R 10.5 Tf 78 418.5 Td (Nel back office, aprite ) Tj ET
-BT /B 10.5 Tf 181.88 418.5 Td (Moduli) Tj ET
-BT /R 10.5 Tf 215.71 418.5 Td (, poi la ) Tj ET
-BT /B 10.5 Tf 249.56 418.5 Td (Gestione moduli) Tj ET
-BT /R 10.5 Tf 331.83 418.5 Td (, e caricate ) Tj ET
-BT /C 10.5 Tf 386.1 418.5 Td (sattleme.zip) Tj ET
-BT /R 10.5 Tf 461.7 418.5 Td (. PrestaShop) Tj ET
-BT /R 10.5 Tf 78 404 Td (installa il modulo.) Tj ET
-BT /R 10.5 Tf 62 383.5 Td (Per aggiornare il modulo, caricate la sua nuova versione allo stesso modo. Disinstallato, il modulo) Tj ET
-BT /R 10.5 Tf 62 369 Td (rimuove le sue impostazioni e la sua chiave; conserva le registrazioni dei suoi pagamenti e i suoi stati) Tj ET
-BT /R 10.5 Tf 62 354.5 Td (d'ordine, a cui i vostri ordini fanno riferimento.) Tj ET
-BT /B 13 Tf 62 319.5 Td (Configurazione) Tj ET
-BT /R 10.5 Tf 62 302 Td (1.) Tj ET
-BT /R 10.5 Tf 78 302 Td (Nell'app di sattle.me, create un'integrazione per il vostro negozio, e copiate la sua chiave segreta) Tj ET
-BT /R 10.5 Tf 78 287.5 Td (\(inizia con ) Tj ET
-BT /C 10.5 Tf 128.18 287.5 Td (sattleme_ck_) Tj ET
-BT /R 10.5 Tf 203.78 287.5 Td (\).) Tj ET
-BT /R 10.5 Tf 62 267 Td (2.) Tj ET
-BT /R 10.5 Tf 78 267 Td (Nel back office, trovate ) Tj ET
-BT /B 10.5 Tf 187.71 267 Td (sattle.me ) Tj ET
-BT /R 10.5 Tf 236.15 267 Td (nella gestione moduli, e cliccate su ) Tj ET
-BT /B 10.5 Tf 401.31 267 Td (Configura) Tj ET
-BT /R 10.5 Tf 450.89 267 Td (.) Tj ET
-BT /R 10.5 Tf 62 246.5 Td (3.) Tj ET
-BT /R 10.5 Tf 78 246.5 Td (Incollate la chiave in ) Tj ET
-BT /B 10.5 Tf 175.46 246.5 Td (Chiave di integrazione) Tj ET
-BT /R 10.5 Tf 286.91 246.5 Td (, e salvate. Il modulo la verifica subito, e rifiuta una) Tj ET
-BT /R 10.5 Tf 78 232 Td (chiave che non pu\362 usare. Una volta salvata, la chiave non viene pi\371 mostrata: lasciate il campo) Tj ET
-BT /R 10.5 Tf 78 217.5 Td (vuoto per conservarla.) Tj ET
-BT /R 10.5 Tf 62 197 Td (4.) Tj ET
-BT /R 10.5 Tf 78 197 Td (Attivate ) Tj ET
-BT /B 10.5 Tf 115.94 197 Td (Accetta pagamenti in bitcoin) Tj ET
-BT /R 10.5 Tf 258.88 197 Td (.) Tj ET
-BT /R 10.5 Tf 62 176.5 Td (5.) Tj ET
-BT /B 10.5 Tf 78 176.5 Td (Tempo per pagare) Tj ET
-BT /R 10.5 Tf 169.02 176.5 Td (: quanto tempo ha un cliente per pagare una fattura, da 1 a 60 minuti \(15 per) Tj ET
-BT /R 10.5 Tf 78 162 Td (impostazione predefinita\).) Tj ET
-BT /R 10.5 Tf 62 141.5 Td (6.) Tj ET
-BT /R 10.5 Tf 78 141.5 Td (Se volete, cambiate il ) Tj ET
-BT /B 10.5 Tf 180.71 141.5 Td (Titolo al pagamento ) Tj ET
-BT /R 10.5 Tf 282.81 141.5 Td (e la ) Tj ET
-BT /B 10.5 Tf 302.66 141.5 Td (Descrizione al pagamento) Tj ET
-BT /R 10.5 Tf 432.2 141.5 Td (, in ciascuna lingua) Tj ET
-BT /R 10.5 Tf 78 127 Td (del negozio.) Tj ET
-BT /R 10.5 Tf 62 106.5 Td (7.) Tj ET
-BT /R 10.5 Tf 78 106.5 Td (Configurate il cron con la riga che mostra la pagina delle impostazioni \(vedi \253Verifiche in) Tj ET
-BT /R 10.5 Tf 78 92 Td (background\273\).) Tj ET
+BT /R 10.5 Tf 78 453.5 Td (Scaricate ) Tj ET
+BT /C 10.5 Tf 124.68 453.5 Td (sattleme.zip) Tj ET
+BT /R 10.5 Tf 200.28 453.5 Td ( dall'ultima versione del modulo su GitHub: il suo repository \350) Tj ET
+BT /R 10.5 Tf 78 439 Td (sattleme/checkout-prestashop, sezione ) Tj ET
+BT /B 10.5 Tf 263 439 Td (Releases) Tj ET
+BT /R 10.5 Tf 308.53 439 Td (. Il file ) Tj ET
+BT /C 10.5 Tf 338.87 439 Td (SHA256SUMS) Tj ET
+BT /R 10.5 Tf 401.87 439 Td (, accanto, permette di) Tj ET
+BT /R 10.5 Tf 78 424.5 Td (verificare il download.) Tj ET
+BT /R 10.5 Tf 62 404 Td (2.) Tj ET
+BT /R 10.5 Tf 78 404 Td (Nel back office, aprite ) Tj ET
+BT /B 10.5 Tf 181.88 404 Td (Moduli) Tj ET
+BT /R 10.5 Tf 215.71 404 Td (, poi la ) Tj ET
+BT /B 10.5 Tf 249.56 404 Td (Gestione moduli) Tj ET
+BT /R 10.5 Tf 331.83 404 Td (, e caricate ) Tj ET
+BT /C 10.5 Tf 386.1 404 Td (sattleme.zip) Tj ET
+BT /R 10.5 Tf 461.7 404 Td (. PrestaShop) Tj ET
+BT /R 10.5 Tf 78 389.5 Td (installa il modulo.) Tj ET
+BT /R 10.5 Tf 62 369 Td (Per aggiornare il modulo, caricate la sua nuova versione allo stesso modo. Disinstallato, il modulo) Tj ET
+BT /R 10.5 Tf 62 354.5 Td (rimuove le sue impostazioni e la sua chiave; conserva le registrazioni dei suoi pagamenti e i suoi stati) Tj ET
+BT /R 10.5 Tf 62 340 Td (d'ordine, a cui i vostri ordini fanno riferimento.) Tj ET
+BT /B 13 Tf 62 305 Td (Configurazione) Tj ET
+BT /R 10.5 Tf 62 287.5 Td (1.) Tj ET
+BT /R 10.5 Tf 78 287.5 Td (Nell'app di sattle.me, create un'integrazione per il vostro negozio, e copiate la sua chiave segreta) Tj ET
+BT /R 10.5 Tf 78 273 Td (\(inizia con ) Tj ET
+BT /C 10.5 Tf 128.18 273 Td (sattleme_ck_) Tj ET
+BT /R 10.5 Tf 203.78 273 Td (\).) Tj ET
+BT /R 10.5 Tf 62 252.5 Td (2.) Tj ET
+BT /R 10.5 Tf 78 252.5 Td (Nel back office, trovate ) Tj ET
+BT /B 10.5 Tf 187.71 252.5 Td (sattle.me ) Tj ET
+BT /R 10.5 Tf 236.15 252.5 Td (nella gestione moduli, e cliccate su ) Tj ET
+BT /B 10.5 Tf 401.31 252.5 Td (Configura) Tj ET
+BT /R 10.5 Tf 450.89 252.5 Td (.) Tj ET
+BT /R 10.5 Tf 62 232 Td (3.) Tj ET
+BT /R 10.5 Tf 78 232 Td (Incollate la chiave in ) Tj ET
+BT /B 10.5 Tf 175.46 232 Td (Chiave di integrazione) Tj ET
+BT /R 10.5 Tf 286.91 232 Td (, e salvate. Il modulo la verifica subito, e rifiuta una) Tj ET
+BT /R 10.5 Tf 78 217.5 Td (chiave che non pu\362 usare. Una volta salvata, la chiave non viene pi\371 mostrata: lasciate il campo) Tj ET
+BT /R 10.5 Tf 78 203 Td (vuoto per conservarla.) Tj ET
+BT /R 10.5 Tf 62 182.5 Td (4.) Tj ET
+BT /R 10.5 Tf 78 182.5 Td (Attivate ) Tj ET
+BT /B 10.5 Tf 115.94 182.5 Td (Accetta pagamenti in bitcoin) Tj ET
+BT /R 10.5 Tf 258.88 182.5 Td (.) Tj ET
+BT /R 10.5 Tf 62 162 Td (5.) Tj ET
+BT /B 10.5 Tf 78 162 Td (Tempo per pagare) Tj ET
+BT /R 10.5 Tf 169.02 162 Td (: quanto tempo ha un cliente per pagare una fattura, da 1 a 60 minuti \(15 per) Tj ET
+BT /R 10.5 Tf 78 147.5 Td (impostazione predefinita\).) Tj ET
+BT /R 10.5 Tf 62 127 Td (6.) Tj ET
+BT /R 10.5 Tf 78 127 Td (Se volete, cambiate il ) Tj ET
+BT /B 10.5 Tf 180.71 127 Td (Titolo al pagamento ) Tj ET
+BT /R 10.5 Tf 282.81 127 Td (e la ) Tj ET
+BT /B 10.5 Tf 302.66 127 Td (Descrizione al pagamento) Tj ET
+BT /R 10.5 Tf 432.2 127 Td (, in ciascuna lingua) Tj ET
+BT /R 10.5 Tf 78 112.5 Td (del negozio.) Tj ET
+BT /R 10.5 Tf 62 92 Td (7.) Tj ET
+BT /R 10.5 Tf 78 92 Td (Configurate il cron con la riga che mostra la pagina delle impostazioni \(vedi \253Verifiche in) Tj ET
+BT /R 10.5 Tf 78 77.5 Td (background\273\).) Tj ET
 BT /R 9 Tf 288.74 40 Td (1 / 3) Tj ET
 endstream
 endobj
@@ -228,15 +233,15 @@ xref
 0000000214 00000 n 
 0000000309 00000 n 
 0000000379 00000 n 
-0000005413 00000 n 
-0000005556 00000 n 
-0000011042 00000 n 
-0000011185 00000 n 
-0000015398 00000 n 
-0000015542 00000 n 
-0000015603 00000 n 
+0000005660 00000 n 
+0000005803 00000 n 
+0000011289 00000 n 
+0000011432 00000 n 
+0000015645 00000 n 
+0000015789 00000 n 
+0000015850 00000 n 
 trailer
 << /Size 13 /Root 11 0 R /Info 12 0 R >>
 startxref
-15837
+16084
 %%EOF

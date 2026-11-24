@@ -32,3 +32,4 @@ prefixed.
 - PrestaShop's GDPR module: the customer's payments in their export; their erasure removes the
   deposit address and the transactions.
 - Translations in French, German and Italian; user guides in English, French, German and Italian.
+- Distributed through the repository's GitHub releases: `sattleme.zip` and its `SHA256SUMS`.

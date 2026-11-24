@@ -84,17 +84,18 @@ do there.
 
 ## Installation
 
-The module is distributed through **PrestaShop Addons** only (PrestaShop's marketplace):
+The module is distributed through this repository's **GitHub releases** only
+([Releases](https://github.com/sattleme/checkout-prestashop/releases)), each with two files: the
+module, `sattleme.zip`, and its SHA-256, `SHA256SUMS`.
 
-1. Get **sattle.me** on PrestaShop Addons: once you have it, its ZIP, `sattleme.zip`, is in your
-   Addons account.
+1. Download `sattleme.zip` and `SHA256SUMS` from the latest release, and check the ZIP against
+   its SHA-256: `sha256sum -c SHA256SUMS` (`sattleme.zip: OK`).
 2. In PrestaShop's back office, **Modules → Module Manager → Upload a module**, and drop the ZIP:
-   PrestaShop installs it (a shop connected to its Addons account can also install it from the
-   back office's marketplace). The ZIP holds the module and its libraries (the SDK and a QR code
+   PrestaShop installs it. The ZIP holds the module and its libraries (the SDK and a QR code
    encoder), their namespaces prefixed, so that another module carrying other versions of them
    never collides with it.
 
-To update the module, install its new version from PrestaShop Addons the same way. Uninstalled, the module
+To update the module, install the ZIP of its new release the same way. Uninstalled, the module
 removes its settings and its key; it keeps the records of its payments and its order states,
 which orders refer to: "Awaiting bitcoin payment" and "Bitcoin payment being confirmed" hidden
 from the lists, "Bitcoin payment to check" as it is if an order is or was in it (else it is
@@ -529,28 +530,33 @@ vendor/bin/phpunit                              # the unit tests, on the ZIP's c
 
 ## Releases
 
-The module is distributed through PrestaShop Addons only: no GitHub release. Releases are the
-maintainers' only:
+The module is distributed through this repository's GitHub releases only: no marketplace, no
+registry. Releases are the maintainers' only:
 
-1. A maintainer pushes a tag `vX.Y.Z` (the version of `sattleme.php`, `config.xml` and
-   `CHANGELOG.md`) on a commit of `main`.
+1. A maintainer pushes a tag `vX.Y.Z` on a commit of `main`: the version of `sattleme.php`,
+   `config.xml` and `CHANGELOG.md`, whose section of it is headed `## X.Y.Z - YYYY-MM-DD`. The
+   ruleset "release tags" lets only the repository's admins create, move or delete a tag `v*`.
 2. [`release.yml`](.github/workflows/release.yml) runs the CI again, checks the tag, builds the
-   ZIP from the lockfile and checks it (`build/sattleme.zip`, named as Addons takes a module: its
-   name, no version), then, once the CI passed, keeps it with its SHA-256 (`SHA256SUMS`) as the
-   run's artifact `sattleme-vX.Y.Z`, for 90 days. It holds no secret and publishes nothing:
-   PrestaShop Addons takes a module only by an upload in its seller account.
-3. A member of the team with access to the seller account downloads the artifact (the run's page,
-   **Artifacts**), checks `sattleme.zip` against `SHA256SUMS` (`sha256sum -c SHA256SUMS`), and
-   uploads it as the product's new version, with its English notes (the CHANGELOG's section of the
-   version) and the PrestaShop versions it supports (9.0 to 9.2). Addons' validator checks the ZIP
-   on upload; its technical and marketing reviews follow.
+   ZIP from the lockfile and checks it (`build/sattleme.zip`, named as PrestaShop takes a module:
+   its name, no version), then, once the CI passed, keeps it with its SHA-256 (`SHA256SUMS`) as the
+   run's artifact `sattleme-vX.Y.Z`, for 90 days.
+3. Its job **Draft release** waits for a maintainer's approval (the environment `release`, its
+   required reviewer, for tags `v*` only). It checks `sattleme.zip` against `SHA256SUMS`, makes a
+   draft GitHub release of the tag with both files, the CHANGELOG's section of the version as its
+   notes, then reads both files back from the draft and compares them with the artifact's. It is
+   the only job that can write the repository's contents, with the run's own token; there is no
+   other secret. A tag that has a release already, draft or not, gets no second one.
+4. A maintainer reads the draft, downloads its ZIP, checks `sattleme.zip` against `SHA256SUMS`
+   (`sha256sum -c SHA256SUMS`), and publishes it. The repository's releases are immutable: once
+   published, a release's files and its tag can no longer change, and a mistake is fixed by a new
+   version.
 
-**Before the first upload**, the module's key: PrestaShop Addons gives it once the product exists
-in the seller account, its marketing information submitted (the seller account, **Products**, the
-module, **Click here to add a zip**: the key to copy). It goes in `sattleme/sattleme.php`'s
-constructor, where its comment says, as `$this->module_key = '<the key>';` (one line, after
-`$this->name`), in a commit of `main` before the first tag; it stays for every later version.
-`tools/check-zip.php` takes the module without it (until then) and with it.
+**PrestaShop Addons.** The ZIP stays as PrestaShop Addons takes a module (`tools/check-zip.php`
+checks it as its validator would), should the module be submitted there one day. Addons would
+then give the module's key once the product exists in its seller account, its marketing
+information submitted. It would go in `sattleme/sattleme.php`'s constructor, where its comment
+says, as `$this->module_key = '<the key>';` (one line, after `$this->name`), in a commit of
+`main` before the tag. `tools/check-zip.php` takes the module without it and with it.
 
 ## License
 
