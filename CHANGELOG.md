@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 - 2026-11-24
+
+- The module's settings page: the background checks' URL wraps within its panel. It ran past
+  the panel's edge, the page wider than the window, on a narrow screen or with a long shop
+  address.
+
 ## 1.0.0 - 2026-11-24
 
 First version, for PrestaShop 9.0 to 9.2 on PHP 8.2 to 8.5, on the sattle.me checkout SDK for PHP

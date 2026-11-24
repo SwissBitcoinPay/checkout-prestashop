@@ -2,7 +2,7 @@
 <module>
     <name>sattleme</name>
     <displayName><![CDATA[sattle.me]]></displayName>
-    <version><![CDATA[1.0.0]]></version>
+    <version><![CDATA[1.0.1]]></version>
     <description><![CDATA[Accept bitcoin payments, in Lightning or on-chain, paid straight to your sattle.me wallet.]]></description>
     <author><![CDATA[sattle.me]]></author>
     <tab><![CDATA[payments_gateways]]></tab>

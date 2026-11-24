@@ -50,7 +50,8 @@
       {if $sattleme_multistore}
         <h5>{$cron.shop|escape:'htmlall':'UTF-8'}</h5>
       {/if}
-      <p><code class="sattleme-cron-url">{$cron.url|escape:'htmlall':'UTF-8'}</code></p>
+      {* A URL has no space: wrapped anywhere. This legacy page's theme (Bootstrap 3) has no text-break. *}
+      <p><code class="sattleme-cron-url" style="word-break: break-all;">{$cron.url|escape:'htmlall':'UTF-8'}</code></p>
       <p>{l s='For example, as a line of the crontab of the web server\'s user:' d='Modules.Sattleme.Admin'}</p>
       <pre>{$cron.line|escape:'htmlall':'UTF-8'}</pre>
       {if $cron.last}

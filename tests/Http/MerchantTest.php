@@ -84,6 +84,8 @@ final class MerchantTest extends TestCase
         $page = $merchant->configurePage();
         $code = $page->byClass('code', 'sattleme-cron-url');
         self::assertCount(1, $code);
+        // Wrapped within its panel, never wider than it: the legacy page's theme has no text-break.
+        self::assertStringContainsString('word-break: break-all', $code[0]->getAttribute('style'));
         $url = trim($code[0]->textContent);
         self::assertMatchesRegularExpression('/[?&]token=[0-9a-f]{64}(&|$)/', $url);
         $cron = HttpShop::browser();

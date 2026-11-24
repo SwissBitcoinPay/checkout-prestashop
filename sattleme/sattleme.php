@@ -60,7 +60,7 @@ class Sattleme extends PaymentModule
 {
     public const NAME = 'sattleme';
 
-    public const VERSION = '1.0.0';
+    public const VERSION = '1.0.1';
 
     /** The payment method's name on PrestaShop's orders, invoices and payments. */
     public const PAYMENT_NAME = 'Bitcoin (sattle.me)';
