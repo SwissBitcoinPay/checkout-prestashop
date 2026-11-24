@@ -203,7 +203,7 @@ final class BuildTest extends TestCase
         self::assertNotFalse($config);
         self::assertSame(BuiltModule::version(), (string) $config->version);
         self::assertSame('sattleme', (string) $config->name);
-        self::assertSame('1.0.0', BuiltModule::version());
-        self::assertStringStartsWith("# Changelog\n\n## 1.0.0 - 2026-11-24\n", (string) file_get_contents(BuiltModule::root() . '/CHANGELOG.md'));
+        self::assertSame('1.0.1', BuiltModule::version());
+        self::assertStringStartsWith("# Changelog\n\n## 1.0.1 - 2026-11-24\n", (string) file_get_contents(BuiltModule::root() . '/CHANGELOG.md'));
     }
 }
